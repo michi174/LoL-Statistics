@@ -2,7 +2,7 @@
     class RiotAPI
     {
 
-        const API_KEY = "RGAPI-a0d65da6-a439-4dec-b1b9-8b69ed9ba931";
+        const API_KEY = "RGAPI-80f00ec3-5f9f-497a-9de4-fd99c392d72c";
         const API_URL = "api.riotgames.com/lol/";
 
         private $status_code    = 200;
