@@ -1,846 +1,2967 @@
 {
     "type": "champion",
-    "version": "8.9.1",
+    "version": "8.11.1",
     "data": {
         "1": {
+            "info": {
+                "difficulty": 6,
+                "attack": 2,
+                "defense": 3,
+                "magic": 10
+            },
+            "name": "Annie",
             "title": "Das Kind der Finsternis",
-            "id": 1,
+            "image": {
+                "full": "Annie.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 288
+            },
             "key": "Annie",
-            "name": "Annie"
+            "id": 1
         },
         "2": {
+            "info": {
+                "difficulty": 3,
+                "attack": 9,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Olaf",
             "title": "Der Berserker",
-            "id": 2,
+            "image": {
+                "full": "Olaf.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 48
+            },
             "key": "Olaf",
-            "name": "Olaf"
+            "id": 2
         },
         "3": {
+            "info": {
+                "difficulty": 5,
+                "attack": 1,
+                "defense": 10,
+                "magic": 6
+            },
+            "name": "Galio",
             "title": "Der Koloss",
-            "id": 3,
+            "image": {
+                "full": "Galio.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 0
+            },
             "key": "Galio",
-            "name": "Galio"
+            "id": 3
         },
         "4": {
+            "info": {
+                "difficulty": 9,
+                "attack": 6,
+                "defense": 2,
+                "magic": 6
+            },
+            "name": "Twisted Fate",
             "title": "Der Meister der Karten",
-            "id": 4,
+            "image": {
+                "full": "TwistedFate.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 336
+            },
             "key": "TwistedFate",
-            "name": "Twisted Fate"
+            "id": 4
         },
         "5": {
+            "info": {
+                "difficulty": 2,
+                "attack": 8,
+                "defense": 6,
+                "magic": 3
+            },
+            "name": "Xin Zhao",
             "title": "Der Seneschall von Demacia",
-            "id": 5,
+            "image": {
+                "full": "XinZhao.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 96
+            },
             "key": "XinZhao",
-            "name": "Xin Zhao"
+            "id": 5
         },
         "6": {
+            "info": {
+                "difficulty": 8,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Urgot",
             "title": "Der Chemtech-Terror",
-            "id": 6,
+            "image": {
+                "full": "Urgot.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 0
+            },
             "key": "Urgot",
-            "name": "Urgot"
+            "id": 6
         },
         "7": {
+            "info": {
+                "difficulty": 9,
+                "attack": 1,
+                "defense": 4,
+                "magic": 10
+            },
+            "name": "LeBlanc",
             "title": "Die Täuscherin",
-            "id": 7,
+            "image": {
+                "full": "Leblanc.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 0
+            },
             "key": "Leblanc",
-            "name": "LeBlanc"
+            "id": 7
         },
         "8": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Vladimir",
             "title": "Der blutrote Schnitter",
-            "id": 8,
+            "image": {
+                "full": "Vladimir.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 336
+            },
             "key": "Vladimir",
-            "name": "Vladimir"
+            "id": 8
         },
         "9": {
+            "info": {
+                "difficulty": 9,
+                "attack": 2,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Fiddlesticks",
             "title": "Der Unheilsbote",
-            "id": 9,
+            "image": {
+                "full": "Fiddlesticks.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 336
+            },
             "key": "Fiddlesticks",
-            "name": "Fiddlesticks"
+            "id": 9
         },
         "10": {
+            "info": {
+                "difficulty": 7,
+                "attack": 6,
+                "defense": 6,
+                "magic": 7
+            },
+            "name": "Kayle",
             "title": "Die Richterin",
-            "id": 10,
+            "image": {
+                "full": "Kayle.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 144
+            },
             "key": "Kayle",
-            "name": "Kayle"
+            "id": 10
         },
         "11": {
+            "info": {
+                "difficulty": 4,
+                "attack": 10,
+                "defense": 4,
+                "magic": 2
+            },
+            "name": "Master Yi",
             "title": "Der Wuju-Schwertkämpfer",
-            "id": 11,
+            "image": {
+                "full": "MasterYi.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 0
+            },
             "key": "MasterYi",
-            "name": "Master Yi"
+            "id": 11
         },
         "12": {
+            "info": {
+                "difficulty": 7,
+                "attack": 6,
+                "defense": 9,
+                "magic": 5
+            },
+            "name": "Alistar",
             "title": "Der Minotaurus",
-            "id": 12,
+            "image": {
+                "full": "Alistar.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 144
+            },
             "key": "Alistar",
-            "name": "Alistar"
+            "id": 12
         },
         "13": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 2,
+                "magic": 10
+            },
+            "name": "Ryze",
             "title": "Der Runenmagier",
-            "id": 13,
+            "image": {
+                "full": "Ryze.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 240
+            },
             "key": "Ryze",
-            "name": "Ryze"
+            "id": 13
         },
         "14": {
+            "info": {
+                "difficulty": 5,
+                "attack": 5,
+                "defense": 9,
+                "magic": 3
+            },
+            "name": "Sion",
             "title": "Der untote Moloch",
-            "id": 14,
+            "image": {
+                "full": "Sion.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 48
+            },
             "key": "Sion",
-            "name": "Sion"
+            "id": 14
         },
         "15": {
+            "info": {
+                "difficulty": 4,
+                "attack": 9,
+                "defense": 3,
+                "magic": 1
+            },
+            "name": "Sivir",
             "title": "Die Kampfmeisterin",
-            "id": 15,
+            "image": {
+                "full": "Sivir.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 96
+            },
             "key": "Sivir",
-            "name": "Sivir"
+            "id": 15
         },
         "16": {
+            "info": {
+                "difficulty": 3,
+                "attack": 2,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Soraka",
             "title": "Das Sternenkind",
-            "id": 16,
+            "image": {
+                "full": "Soraka.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 240
+            },
             "key": "Soraka",
-            "name": "Soraka"
+            "id": 16
         },
         "17": {
+            "info": {
+                "difficulty": 6,
+                "attack": 5,
+                "defense": 3,
+                "magic": 7
+            },
+            "name": "Teemo",
             "title": "Der flinke Späher",
-            "id": 17,
+            "image": {
+                "full": "Teemo.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 96
+            },
             "key": "Teemo",
-            "name": "Teemo"
+            "id": 17
         },
         "18": {
+            "info": {
+                "difficulty": 4,
+                "attack": 9,
+                "defense": 3,
+                "magic": 5
+            },
+            "name": "Tristana",
             "title": "Die Yordle-Schützin",
-            "id": 18,
+            "image": {
+                "full": "Tristana.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 192
+            },
             "key": "Tristana",
-            "name": "Tristana"
+            "id": 18
         },
         "19": {
+            "info": {
+                "difficulty": 3,
+                "attack": 9,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Warwick",
             "title": "Zhauns entfesselter Zorn",
-            "id": 19,
+            "image": {
+                "full": "Warwick.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 432
+            },
             "key": "Warwick",
-            "name": "Warwick"
+            "id": 19
         },
         "20": {
+            "info": {
+                "difficulty": 4,
+                "attack": 4,
+                "defense": 6,
+                "magic": 7
+            },
+            "name": "Nunu",
             "title": "Der Yeti-Reiter",
-            "id": 20,
+            "image": {
+                "full": "Nunu.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 0
+            },
             "key": "Nunu",
-            "name": "Nunu"
+            "id": 20
         },
         "21": {
+            "info": {
+                "difficulty": 1,
+                "attack": 8,
+                "defense": 2,
+                "magic": 5
+            },
+            "name": "Miss Fortune",
             "title": "Die Kopfgeldjägerin",
-            "id": 21,
+            "image": {
+                "full": "MissFortune.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 48
+            },
             "key": "MissFortune",
-            "name": "Miss Fortune"
+            "id": 21
         },
         "22": {
+            "info": {
+                "difficulty": 4,
+                "attack": 7,
+                "defense": 3,
+                "magic": 2
+            },
+            "name": "Ashe",
             "title": "Die Frostbogenschützin",
-            "id": 22,
+            "image": {
+                "full": "Ashe.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 336
+            },
             "key": "Ashe",
-            "name": "Ashe"
+            "id": 22
         },
         "23": {
+            "info": {
+                "difficulty": 5,
+                "attack": 10,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Tryndamere",
             "title": "Der Barbarenkönig",
-            "id": 23,
+            "image": {
+                "full": "Tryndamere.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 288
+            },
             "key": "Tryndamere",
-            "name": "Tryndamere"
+            "id": 23
         },
         "24": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Jax",
             "title": "Der Großmeister der Waffen",
-            "id": 24,
+            "image": {
+                "full": "Jax.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 144
+            },
             "key": "Jax",
-            "name": "Jax"
+            "id": 24
         },
         "25": {
+            "info": {
+                "difficulty": 1,
+                "attack": 1,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Morgana",
             "title": "Der gefallene Engel",
-            "id": 25,
+            "image": {
+                "full": "Morgana.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 192
+            },
             "key": "Morgana",
-            "name": "Morgana"
+            "id": 25
         },
         "26": {
+            "info": {
+                "difficulty": 6,
+                "attack": 2,
+                "defense": 5,
+                "magic": 8
+            },
+            "name": "Zilean",
             "title": "Der Zeitwächter",
-            "id": 26,
+            "image": {
+                "full": "Zilean.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 384
+            },
             "key": "Zilean",
-            "name": "Zilean"
+            "id": 26
         },
         "27": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 8,
+                "magic": 7
+            },
+            "name": "Singed",
             "title": "Der verrückte Chemiker",
-            "id": 27,
+            "image": {
+                "full": "Singed.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 0
+            },
             "key": "Singed",
-            "name": "Singed"
+            "id": 27
         },
         "28": {
+            "info": {
+                "difficulty": 10,
+                "attack": 4,
+                "defense": 2,
+                "magic": 7
+            },
+            "name": "Evelynn",
             "title": "Umarmung der Qual",
-            "id": 28,
+            "image": {
+                "full": "Evelynn.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 240
+            },
             "key": "Evelynn",
-            "name": "Evelynn"
+            "id": 28
         },
         "29": {
+            "info": {
+                "difficulty": 6,
+                "attack": 9,
+                "defense": 2,
+                "magic": 3
+            },
+            "name": "Twitch",
             "title": "Die Seuchenratte",
-            "id": 29,
+            "image": {
+                "full": "Twitch.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 384
+            },
             "key": "Twitch",
-            "name": "Twitch"
+            "id": 29
         },
         "30": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 2,
+                "magic": 10
+            },
+            "name": "Karthus",
             "title": "Der Todessänger",
-            "id": 30,
+            "image": {
+                "full": "Karthus.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 0
+            },
             "key": "Karthus",
-            "name": "Karthus"
+            "id": 30
         },
         "31": {
+            "info": {
+                "difficulty": 5,
+                "attack": 3,
+                "defense": 7,
+                "magic": 7
+            },
+            "name": "Cho'Gath",
             "title": "Der Schrecken der Leere",
-            "id": 31,
+            "image": {
+                "full": "Chogath.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 336
+            },
             "key": "Chogath",
-            "name": "Cho'Gath"
+            "id": 31
         },
         "32": {
+            "info": {
+                "difficulty": 3,
+                "attack": 2,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Amumu",
             "title": "Die traurige Mumie",
-            "id": 32,
+            "image": {
+                "full": "Amumu.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 192
+            },
             "key": "Amumu",
-            "name": "Amumu"
+            "id": 32
         },
         "33": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 10,
+                "magic": 5
+            },
+            "name": "Rammus",
             "title": "Das Panzergürteltier",
-            "id": 33,
+            "image": {
+                "full": "Rammus.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 432
+            },
             "key": "Rammus",
-            "name": "Rammus"
+            "id": 33
         },
         "34": {
+            "info": {
+                "difficulty": 10,
+                "attack": 1,
+                "defense": 4,
+                "magic": 10
+            },
+            "name": "Anivia",
             "title": "Der Kryophönix",
-            "id": 34,
+            "image": {
+                "full": "Anivia.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 240
+            },
             "key": "Anivia",
-            "name": "Anivia"
+            "id": 34
         },
         "35": {
+            "info": {
+                "difficulty": 9,
+                "attack": 8,
+                "defense": 4,
+                "magic": 6
+            },
+            "name": "Shaco",
             "title": "Der dunkle Hofnarr",
-            "id": 35,
+            "image": {
+                "full": "Shaco.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 336
+            },
             "key": "Shaco",
-            "name": "Shaco"
+            "id": 35
         },
         "36": {
+            "info": {
+                "difficulty": 5,
+                "attack": 5,
+                "defense": 7,
+                "magic": 6
+            },
+            "name": "Dr. Mundo",
             "title": "Der Irre von Zhaun",
-            "id": 36,
+            "image": {
+                "full": "DrMundo.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 96
+            },
             "key": "DrMundo",
-            "name": "Dr. Mundo"
+            "id": 36
         },
         "37": {
+            "info": {
+                "difficulty": 4,
+                "attack": 5,
+                "defense": 2,
+                "magic": 8
+            },
+            "name": "Sona",
             "title": "Die Virtuosin",
-            "id": 37,
+            "image": {
+                "full": "Sona.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 192
+            },
             "key": "Sona",
-            "name": "Sona"
+            "id": 37
         },
         "38": {
+            "info": {
+                "difficulty": 8,
+                "attack": 3,
+                "defense": 5,
+                "magic": 8
+            },
+            "name": "Kassadin",
             "title": "Der Leerengänger",
-            "id": 38,
+            "image": {
+                "full": "Kassadin.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 48
+            },
             "key": "Kassadin",
-            "name": "Kassadin"
+            "id": 38
         },
         "39": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 4,
+                "magic": 5
+            },
+            "name": "Irelia",
             "title": "Die Klingentänzerin",
-            "id": 39,
+            "image": {
+                "full": "Irelia.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 432
+            },
             "key": "Irelia",
-            "name": "Irelia"
+            "id": 39
         },
         "40": {
+            "info": {
+                "difficulty": 7,
+                "attack": 3,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Janna",
             "title": "Die Wut des Sturms",
-            "id": 40,
+            "image": {
+                "full": "Janna.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 48
+            },
             "key": "Janna",
-            "name": "Janna"
+            "id": 40
         },
         "41": {
+            "info": {
+                "difficulty": 9,
+                "attack": 7,
+                "defense": 6,
+                "magic": 4
+            },
+            "name": "Gangplank",
             "title": "Die Salzwassergeißel",
-            "id": 41,
+            "image": {
+                "full": "Gangplank.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 48
+            },
             "key": "Gangplank",
-            "name": "Gangplank"
+            "id": 41
         },
         "42": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 3,
+                "magic": 6
+            },
+            "name": "Corki",
             "title": "Der kühne Bombenschütze",
-            "id": 42,
+            "image": {
+                "full": "Corki.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 384
+            },
             "key": "Corki",
-            "name": "Corki"
+            "id": 42
         },
         "43": {
+            "info": {
+                "difficulty": 5,
+                "attack": 1,
+                "defense": 7,
+                "magic": 8
+            },
+            "name": "Karma",
             "title": "Die Erleuchtete",
-            "id": 43,
+            "image": {
+                "full": "Karma.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 432
+            },
             "key": "Karma",
-            "name": "Karma"
+            "id": 43
         },
         "44": {
+            "info": {
+                "difficulty": 3,
+                "attack": 4,
+                "defense": 8,
+                "magic": 5
+            },
+            "name": "Taric",
             "title": "Der Schild von Valoran",
-            "id": 44,
+            "image": {
+                "full": "Taric.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 48
+            },
             "key": "Taric",
-            "name": "Taric"
+            "id": 44
         },
         "45": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 2,
+                "magic": 10
+            },
+            "name": "Veigar",
             "title": "Der kleine Meister des Bösen",
-            "id": 45,
+            "image": {
+                "full": "Veigar.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 144
+            },
             "key": "Veigar",
-            "name": "Veigar"
+            "id": 45
         },
         "48": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 6,
+                "magic": 2
+            },
+            "name": "Trundle",
             "title": "Der Trollkönig",
-            "id": 48,
+            "image": {
+                "full": "Trundle.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 240
+            },
             "key": "Trundle",
-            "name": "Trundle"
+            "id": 48
         },
         "50": {
+            "info": {
+                "difficulty": 8,
+                "attack": 2,
+                "defense": 6,
+                "magic": 9
+            },
+            "name": "Swain",
             "title": "Der noxianische Großgeneral",
-            "id": 50,
+            "image": {
+                "full": "Swain.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 288
+            },
             "key": "Swain",
-            "name": "Swain"
+            "id": 50
         },
         "51": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 2,
+                "magic": 2
+            },
+            "name": "Caitlyn",
             "title": "Der Sheriff von Piltover",
-            "id": 51,
+            "image": {
+                "full": "Caitlyn.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 192
+            },
             "key": "Caitlyn",
-            "name": "Caitlyn"
+            "id": 51
         },
         "53": {
+            "info": {
+                "difficulty": 4,
+                "attack": 4,
+                "defense": 8,
+                "magic": 5
+            },
+            "name": "Blitzcrank",
             "title": "Der große Dampfgolem",
-            "id": 53,
+            "image": {
+                "full": "Blitzcrank.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 48
+            },
             "key": "Blitzcrank",
-            "name": "Blitzcrank"
+            "id": 53
         },
         "54": {
+            "info": {
+                "difficulty": 2,
+                "attack": 5,
+                "defense": 9,
+                "magic": 7
+            },
+            "name": "Malphite",
             "title": "Der Splitter des Monolithen",
-            "id": 54,
+            "image": {
+                "full": "Malphite.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 336
+            },
             "key": "Malphite",
-            "name": "Malphite"
+            "id": 54
         },
         "55": {
+            "info": {
+                "difficulty": 8,
+                "attack": 4,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Katarina",
             "title": "Die unheimliche Klinge",
-            "id": 55,
+            "image": {
+                "full": "Katarina.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 96
+            },
             "key": "Katarina",
-            "name": "Katarina"
+            "id": 55
         },
         "56": {
+            "info": {
+                "difficulty": 4,
+                "attack": 9,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Nocturne",
             "title": "Der ewige Albtraum",
-            "id": 56,
+            "image": {
+                "full": "Nocturne.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 432
+            },
             "key": "Nocturne",
-            "name": "Nocturne"
+            "id": 56
         },
         "57": {
+            "info": {
+                "difficulty": 3,
+                "attack": 3,
+                "defense": 8,
+                "magic": 6
+            },
+            "name": "Maokai",
             "title": "Der verdorbene Baumriese",
-            "id": 57,
+            "image": {
+                "full": "Maokai.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 432
+            },
             "key": "Maokai",
-            "name": "Maokai"
+            "id": 57
         },
         "58": {
+            "info": {
+                "difficulty": 3,
+                "attack": 8,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Renekton",
             "title": "Der Schlächter des Sandes",
-            "id": 58,
+            "image": {
+                "full": "Renekton.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 48
+            },
             "key": "Renekton",
-            "name": "Renekton"
+            "id": 58
         },
         "59": {
+            "info": {
+                "difficulty": 5,
+                "attack": 6,
+                "defense": 8,
+                "magic": 3
+            },
+            "name": "Jarvan IV.",
             "title": "Das Vorbild von Demacia",
-            "id": 59,
+            "image": {
+                "full": "JarvanIV.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 96
+            },
             "key": "JarvanIV",
-            "name": "Jarvan IV."
+            "id": 59
         },
         "60": {
+            "info": {
+                "difficulty": 9,
+                "attack": 6,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Elise",
             "title": "Die Spinnenkönigin",
-            "id": 60,
+            "image": {
+                "full": "Elise.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 192
+            },
             "key": "Elise",
-            "name": "Elise"
+            "id": 60
         },
         "61": {
+            "info": {
+                "difficulty": 7,
+                "attack": 4,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Orianna",
             "title": "Die Aufziehpuppe",
-            "id": 61,
+            "image": {
+                "full": "Orianna.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 96
+            },
             "key": "Orianna",
-            "name": "Orianna"
+            "id": 61
         },
         "62": {
+            "info": {
+                "difficulty": 3,
+                "attack": 8,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Wukong",
             "title": "Der Affenkönig",
-            "id": 62,
+            "image": {
+                "full": "MonkeyKing.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 96
+            },
             "key": "MonkeyKing",
-            "name": "Wukong"
+            "id": 62
         },
         "63": {
+            "info": {
+                "difficulty": 4,
+                "attack": 2,
+                "defense": 2,
+                "magic": 9
+            },
+            "name": "Brand",
             "title": "Die brennende Vergeltung",
-            "id": 63,
+            "image": {
+                "full": "Brand.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 96
+            },
             "key": "Brand",
-            "name": "Brand"
+            "id": 63
         },
         "64": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Lee Sin",
             "title": "Der blinde Mönch",
-            "id": 64,
+            "image": {
+                "full": "LeeSin.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 48
+            },
             "key": "LeeSin",
-            "name": "Lee Sin"
+            "id": 64
         },
         "67": {
+            "info": {
+                "difficulty": 8,
+                "attack": 10,
+                "defense": 1,
+                "magic": 1
+            },
+            "name": "Vayne",
             "title": "Die Jägerin der Nacht",
-            "id": 67,
+            "image": {
+                "full": "Vayne.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 96
+            },
             "key": "Vayne",
-            "name": "Vayne"
+            "id": 67
         },
         "68": {
+            "info": {
+                "difficulty": 10,
+                "attack": 3,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Rumble",
             "title": "Die mechanisierte Bedrohung",
-            "id": 68,
+            "image": {
+                "full": "Rumble.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 192
+            },
             "key": "Rumble",
-            "name": "Rumble"
+            "id": 68
         },
         "69": {
+            "info": {
+                "difficulty": 10,
+                "attack": 2,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Cassiopeia",
             "title": "Die Umarmung der Schlange",
-            "id": 69,
+            "image": {
+                "full": "Cassiopeia.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 288
+            },
             "key": "Cassiopeia",
-            "name": "Cassiopeia"
+            "id": 69
         },
         "72": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 6,
+                "magic": 5
+            },
+            "name": "Skarner",
             "title": "Der Kristallstachel",
-            "id": 72,
+            "image": {
+                "full": "Skarner.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 144
+            },
             "key": "Skarner",
-            "name": "Skarner"
+            "id": 72
         },
         "74": {
+            "info": {
+                "difficulty": 8,
+                "attack": 2,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Heimerdinger",
             "title": "Der verehrte Erfinder",
-            "id": 74,
+            "image": {
+                "full": "Heimerdinger.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 336
+            },
             "key": "Heimerdinger",
-            "name": "Heimerdinger"
+            "id": 74
         },
         "75": {
+            "info": {
+                "difficulty": 6,
+                "attack": 7,
+                "defense": 5,
+                "magic": 6
+            },
+            "name": "Nasus",
             "title": "Der Bewahrer des Sandes",
-            "id": 75,
+            "image": {
+                "full": "Nasus.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 288
+            },
             "key": "Nasus",
-            "name": "Nasus"
+            "id": 75
         },
         "76": {
+            "info": {
+                "difficulty": 8,
+                "attack": 5,
+                "defense": 4,
+                "magic": 7
+            },
+            "name": "Nidalee",
             "title": "Die bestialische Jägerin",
-            "id": 76,
+            "image": {
+                "full": "Nidalee.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 384
+            },
             "key": "Nidalee",
-            "name": "Nidalee"
+            "id": 76
         },
         "77": {
+            "info": {
+                "difficulty": 7,
+                "attack": 8,
+                "defense": 7,
+                "magic": 4
+            },
+            "name": "Udyr",
             "title": "Der Geistwanderer",
-            "id": 77,
+            "image": {
+                "full": "Udyr.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 432
+            },
             "key": "Udyr",
-            "name": "Udyr"
+            "id": 77
         },
         "78": {
+            "info": {
+                "difficulty": 6,
+                "attack": 6,
+                "defense": 7,
+                "magic": 2
+            },
+            "name": "Poppy",
             "title": "Die Hüterin des Hammers",
-            "id": 78,
+            "image": {
+                "full": "Poppy.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 240
+            },
             "key": "Poppy",
-            "name": "Poppy"
+            "id": 78
         },
         "79": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 7,
+                "magic": 6
+            },
+            "name": "Gragas",
             "title": "Der Unruhestifter",
-            "id": 79,
+            "image": {
+                "full": "Gragas.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 192
+            },
             "key": "Gragas",
-            "name": "Gragas"
+            "id": 79
         },
         "80": {
+            "info": {
+                "difficulty": 4,
+                "attack": 9,
+                "defense": 4,
+                "magic": 3
+            },
+            "name": "Pantheon",
             "title": "Der Meister der Kriegskunst",
-            "id": 80,
+            "image": {
+                "full": "Pantheon.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 192
+            },
             "key": "Pantheon",
-            "name": "Pantheon"
+            "id": 80
         },
         "81": {
+            "info": {
+                "difficulty": 7,
+                "attack": 7,
+                "defense": 2,
+                "magic": 6
+            },
+            "name": "Ezreal",
             "title": "Der verwegene Forscher",
-            "id": 81,
+            "image": {
+                "full": "Ezreal.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 288
+            },
             "key": "Ezreal",
-            "name": "Ezreal"
+            "id": 81
         },
         "82": {
+            "info": {
+                "difficulty": 4,
+                "attack": 4,
+                "defense": 6,
+                "magic": 7
+            },
+            "name": "Mordekaiser",
             "title": "Der eiserne Albtraum",
-            "id": 82,
+            "image": {
+                "full": "Mordekaiser.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 144
+            },
             "key": "Mordekaiser",
-            "name": "Mordekaiser"
+            "id": 82
         },
         "83": {
+            "info": {
+                "difficulty": 6,
+                "attack": 6,
+                "defense": 6,
+                "magic": 4
+            },
+            "name": "Yorick",
             "title": "Der Hirte der verlorenen Seelen",
-            "id": 83,
+            "image": {
+                "full": "Yorick.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 192
+            },
             "key": "Yorick",
-            "name": "Yorick"
+            "id": 83
         },
         "84": {
+            "info": {
+                "difficulty": 7,
+                "attack": 5,
+                "defense": 3,
+                "magic": 8
+            },
+            "name": "Akali",
             "title": "Die Faust der Schatten",
-            "id": 84,
+            "image": {
+                "full": "Akali.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 96
+            },
             "key": "Akali",
-            "name": "Akali"
+            "id": 84
         },
         "85": {
+            "info": {
+                "difficulty": 4,
+                "attack": 6,
+                "defense": 4,
+                "magic": 7
+            },
+            "name": "Kennen",
             "title": "Das Herz des Sturms",
-            "id": 85,
+            "image": {
+                "full": "Kennen.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 240
+            },
             "key": "Kennen",
-            "name": "Kennen"
+            "id": 85
         },
         "86": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 7,
+                "magic": 1
+            },
+            "name": "Garen",
             "title": "Die Macht von Demacia",
-            "id": 86,
+            "image": {
+                "full": "Garen.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 96
+            },
             "key": "Garen",
-            "name": "Garen"
+            "id": 86
         },
         "89": {
+            "info": {
+                "difficulty": 4,
+                "attack": 4,
+                "defense": 8,
+                "magic": 3
+            },
+            "name": "Leona",
             "title": "Der strahlende Sonnenaufgang",
-            "id": 89,
+            "image": {
+                "full": "Leona.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 96
+            },
             "key": "Leona",
-            "name": "Leona"
+            "id": 89
         },
         "90": {
+            "info": {
+                "difficulty": 6,
+                "attack": 2,
+                "defense": 2,
+                "magic": 9
+            },
+            "name": "Malzahar",
             "title": "Der Prophet der Leere",
-            "id": 90,
+            "image": {
+                "full": "Malzahar.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 384
+            },
             "key": "Malzahar",
-            "name": "Malzahar"
+            "id": 90
         },
         "91": {
+            "info": {
+                "difficulty": 7,
+                "attack": 9,
+                "defense": 3,
+                "magic": 1
+            },
+            "name": "Talon",
             "title": "Der Klingenschatten",
-            "id": 91,
+            "image": {
+                "full": "Talon.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 0
+            },
             "key": "Talon",
-            "name": "Talon"
+            "id": 91
         },
         "92": {
+            "info": {
+                "difficulty": 8,
+                "attack": 8,
+                "defense": 5,
+                "magic": 1
+            },
+            "name": "Riven",
             "title": "Die Verbannte",
-            "id": 92,
+            "image": {
+                "full": "Riven.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 144
+            },
             "key": "Riven",
-            "name": "Riven"
+            "id": 92
         },
         "96": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 2,
+                "magic": 5
+            },
+            "name": "Kog'Maw",
             "title": "Der Schlund des Abgrunds",
-            "id": 96,
+            "image": {
+                "full": "KogMaw.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 432
+            },
             "key": "KogMaw",
-            "name": "Kog'Maw"
+            "id": 96
         },
         "98": {
+            "info": {
+                "difficulty": 4,
+                "attack": 3,
+                "defense": 9,
+                "magic": 3
+            },
+            "name": "Shen",
             "title": "Das Auge des Zwielichts",
-            "id": 98,
+            "image": {
+                "full": "Shen.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 384
+            },
             "key": "Shen",
-            "name": "Shen"
+            "id": 98
         },
         "99": {
+            "info": {
+                "difficulty": 5,
+                "attack": 2,
+                "defense": 4,
+                "magic": 9
+            },
+            "name": "Lux",
             "title": "Die Lady des Lichts",
-            "id": 99,
+            "image": {
+                "full": "Lux.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 288
+            },
             "key": "Lux",
-            "name": "Lux"
+            "id": 99
         },
         "101": {
+            "info": {
+                "difficulty": 8,
+                "attack": 1,
+                "defense": 3,
+                "magic": 10
+            },
+            "name": "Xerath",
             "title": "Der aufgestiegene Magier",
-            "id": 101,
+            "image": {
+                "full": "Xerath.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 48
+            },
             "key": "Xerath",
-            "name": "Xerath"
+            "id": 101
         },
         "102": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 6,
+                "magic": 3
+            },
+            "name": "Shyvana",
             "title": "Der Halbdrache",
-            "id": 102,
+            "image": {
+                "full": "Shyvana.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 432
+            },
             "key": "Shyvana",
-            "name": "Shyvana"
+            "id": 102
         },
         "103": {
+            "info": {
+                "difficulty": 5,
+                "attack": 3,
+                "defense": 4,
+                "magic": 8
+            },
+            "name": "Ahri",
             "title": "Die neunschwänzige Füchsin",
-            "id": 103,
+            "image": {
+                "full": "Ahri.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 48
+            },
             "key": "Ahri",
-            "name": "Ahri"
+            "id": 103
         },
         "104": {
+            "info": {
+                "difficulty": 3,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Graves",
             "title": "Der Gesetzlose",
-            "id": 104,
+            "image": {
+                "full": "Graves.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 240
+            },
             "key": "Graves",
-            "name": "Graves"
+            "id": 104
         },
         "105": {
+            "info": {
+                "difficulty": 6,
+                "attack": 6,
+                "defense": 4,
+                "magic": 7
+            },
+            "name": "Fizz",
             "title": "Der Gezeitentäuscher",
-            "id": 105,
+            "image": {
+                "full": "Fizz.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 432
+            },
             "key": "Fizz",
-            "name": "Fizz"
+            "id": 105
         },
         "106": {
+            "info": {
+                "difficulty": 3,
+                "attack": 7,
+                "defense": 7,
+                "magic": 4
+            },
+            "name": "Volibear",
             "title": "Das Donnergrollen",
-            "id": 106,
+            "image": {
+                "full": "Volibear.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 384
+            },
             "key": "Volibear",
-            "name": "Volibear"
+            "id": 106
         },
         "107": {
+            "info": {
+                "difficulty": 8,
+                "attack": 7,
+                "defense": 4,
+                "magic": 2
+            },
+            "name": "Rengar",
             "title": "Der stolze Jäger",
-            "id": 107,
+            "image": {
+                "full": "Rengar.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 96
+            },
             "key": "Rengar",
-            "name": "Rengar"
+            "id": 107
         },
         "110": {
+            "info": {
+                "difficulty": 2,
+                "attack": 7,
+                "defense": 3,
+                "magic": 4
+            },
+            "name": "Varus",
             "title": "Der Pfeil der Vergeltung",
-            "id": 110,
+            "image": {
+                "full": "Varus.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 48
+            },
             "key": "Varus",
-            "name": "Varus"
+            "id": 110
         },
         "111": {
+            "info": {
+                "difficulty": 6,
+                "attack": 4,
+                "defense": 6,
+                "magic": 6
+            },
+            "name": "Nautilus",
             "title": "Der Titan der Tiefen",
-            "id": 111,
+            "image": {
+                "full": "Nautilus.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 336
+            },
             "key": "Nautilus",
-            "name": "Nautilus"
+            "id": 111
         },
         "112": {
+            "info": {
+                "difficulty": 9,
+                "attack": 2,
+                "defense": 4,
+                "magic": 10
+            },
+            "name": "Viktor",
             "title": "Der Vorbote der Maschinen",
-            "id": 112,
+            "image": {
+                "full": "Viktor.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 288
+            },
             "key": "Viktor",
-            "name": "Viktor"
+            "id": 112
         },
         "113": {
+            "info": {
+                "difficulty": 4,
+                "attack": 5,
+                "defense": 7,
+                "magic": 6
+            },
+            "name": "Sejuani",
             "title": "Zorn des Nordens",
-            "id": 113,
+            "image": {
+                "full": "Sejuani.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 288
+            },
             "key": "Sejuani",
-            "name": "Sejuani"
+            "id": 113
         },
         "114": {
+            "info": {
+                "difficulty": 3,
+                "attack": 10,
+                "defense": 4,
+                "magic": 2
+            },
+            "name": "Fiora",
             "title": "Die große Duellantin",
-            "id": 114,
+            "image": {
+                "full": "Fiora.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 384
+            },
             "key": "Fiora",
-            "name": "Fiora"
+            "id": 114
         },
         "115": {
+            "info": {
+                "difficulty": 4,
+                "attack": 2,
+                "defense": 4,
+                "magic": 9
+            },
+            "name": "Ziggs",
             "title": "Der Hexplosions-Experte",
-            "id": 115,
+            "image": {
+                "full": "Ziggs.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 336
+            },
             "key": "Ziggs",
-            "name": "Ziggs"
+            "id": 115
         },
         "117": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Lulu",
             "title": "Die Zauberin der Fae",
-            "id": 117,
+            "image": {
+                "full": "Lulu.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 240
+            },
             "key": "Lulu",
-            "name": "Lulu"
+            "id": 117
         },
         "119": {
+            "info": {
+                "difficulty": 8,
+                "attack": 9,
+                "defense": 3,
+                "magic": 1
+            },
+            "name": "Draven",
             "title": "Der ruhmreiche Scharfrichter",
-            "id": 119,
+            "image": {
+                "full": "Draven.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 48
+            },
             "key": "Draven",
-            "name": "Draven"
+            "id": 119
         },
         "120": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 6,
+                "magic": 4
+            },
+            "name": "Hecarim",
             "title": "Der Schatten des Krieges",
-            "id": 120,
+            "image": {
+                "full": "Hecarim.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 288
+            },
             "key": "Hecarim",
-            "name": "Hecarim"
+            "id": 120
         },
         "121": {
+            "info": {
+                "difficulty": 6,
+                "attack": 9,
+                "defense": 4,
+                "magic": 3
+            },
+            "name": "Kha'Zix",
             "title": "Der Räuber der Leere",
-            "id": 121,
+            "image": {
+                "full": "Khazix.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 288
+            },
             "key": "Khazix",
-            "name": "Kha'Zix"
+            "id": 121
         },
         "122": {
+            "info": {
+                "difficulty": 2,
+                "attack": 9,
+                "defense": 5,
+                "magic": 1
+            },
+            "name": "Darius",
             "title": "Die Hand von Noxus",
-            "id": 122,
+            "image": {
+                "full": "Darius.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 432
+            },
             "key": "Darius",
-            "name": "Darius"
+            "id": 122
         },
         "126": {
+            "info": {
+                "difficulty": 7,
+                "attack": 8,
+                "defense": 4,
+                "magic": 3
+            },
+            "name": "Jayce",
             "title": "Der Verteidiger von Morgen",
-            "id": 126,
+            "image": {
+                "full": "Jayce.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 192
+            },
             "key": "Jayce",
-            "name": "Jayce"
+            "id": 126
         },
         "127": {
+            "info": {
+                "difficulty": 6,
+                "attack": 2,
+                "defense": 5,
+                "magic": 8
+            },
+            "name": "Lissandra",
             "title": "Die Eishexe",
-            "id": 127,
+            "image": {
+                "full": "Lissandra.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 144
+            },
             "key": "Lissandra",
-            "name": "Lissandra"
+            "id": 127
         },
         "131": {
+            "info": {
+                "difficulty": 4,
+                "attack": 7,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Diana",
             "title": "Der Hohn des Mondes",
-            "id": 131,
+            "image": {
+                "full": "Diana.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 0
+            },
             "key": "Diana",
-            "name": "Diana"
+            "id": 131
         },
         "133": {
+            "info": {
+                "difficulty": 5,
+                "attack": 9,
+                "defense": 4,
+                "magic": 2
+            },
+            "name": "Quinn",
             "title": "Demacias Schwingen",
-            "id": 133,
+            "image": {
+                "full": "Quinn.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 336
+            },
             "key": "Quinn",
-            "name": "Quinn"
+            "id": 133
         },
         "134": {
+            "info": {
+                "difficulty": 8,
+                "attack": 2,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Syndra",
             "title": "Die dunkle Herrscherin",
-            "id": 134,
+            "image": {
+                "full": "Syndra.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 336
+            },
             "key": "Syndra",
-            "name": "Syndra"
+            "id": 134
         },
         "136": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 3,
+                "magic": 8
+            },
+            "name": "Aurelion Sol",
             "title": "Der Sternenschmied",
-            "id": 136,
+            "image": {
+                "full": "AurelionSol.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 384
+            },
             "key": "AurelionSol",
-            "name": "Aurelion Sol"
+            "id": 136
         },
         "141": {
+            "info": {
+                "difficulty": 8,
+                "attack": 10,
+                "defense": 6,
+                "magic": 1
+            },
+            "name": "Kayn",
             "title": "Der Schatten des Todes",
-            "id": 141,
+            "image": {
+                "full": "Kayn.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 192
+            },
             "key": "Kayn",
-            "name": "Kayn"
+            "id": 141
         },
         "142": {
+            "info": {
+                "difficulty": 5,
+                "attack": 1,
+                "defense": 7,
+                "magic": 8
+            },
+            "name": "Zoe",
             "title": "Der Aspekt des Zwielichts",
-            "id": 142,
+            "image": {
+                "full": "Zoe.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 432
+            },
             "key": "Zoe",
-            "name": "Zoe"
+            "id": 142
         },
         "143": {
+            "info": {
+                "difficulty": 7,
+                "attack": 4,
+                "defense": 3,
+                "magic": 8
+            },
+            "name": "Zyra",
             "title": "Die Gebieterin der Dornen",
-            "id": 143,
+            "image": {
+                "full": "Zyra.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 0
+            },
             "key": "Zyra",
-            "name": "Zyra"
+            "id": 143
         },
         "145": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Kai'Sa",
             "title": "Tochter der Leere",
-            "id": 145,
+            "image": {
+                "full": "Kaisa.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 336
+            },
             "key": "Kaisa",
-            "name": "Kai'Sa"
+            "id": 145
         },
         "150": {
+            "info": {
+                "difficulty": 8,
+                "attack": 6,
+                "defense": 5,
+                "magic": 5
+            },
+            "name": "Gnar",
             "title": "Das fehlende Bindeglied",
-            "id": 150,
+            "image": {
+                "full": "Gnar.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 144
+            },
             "key": "Gnar",
-            "name": "Gnar"
+            "id": 150
         },
         "154": {
+            "info": {
+                "difficulty": 8,
+                "attack": 3,
+                "defense": 7,
+                "magic": 7
+            },
+            "name": "Zac",
             "title": "Die Geheimwaffe",
-            "id": 154,
+            "image": {
+                "full": "Zac.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 240
+            },
             "key": "Zac",
-            "name": "Zac"
+            "id": 154
         },
         "157": {
+            "info": {
+                "difficulty": 10,
+                "attack": 8,
+                "defense": 4,
+                "magic": 4
+            },
+            "name": "Yasuo",
             "title": "Der entehrte Krieger",
-            "id": 157,
+            "image": {
+                "full": "Yasuo.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 144
+            },
             "key": "Yasuo",
-            "name": "Yasuo"
+            "id": 157
         },
         "161": {
+            "info": {
+                "difficulty": 8,
+                "attack": 2,
+                "defense": 2,
+                "magic": 10
+            },
+            "name": "Vel'Koz",
             "title": "Das Auge der Leere",
-            "id": 161,
+            "image": {
+                "full": "Velkoz.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 192
+            },
             "key": "Velkoz",
-            "name": "Vel'Koz"
+            "id": 161
         },
         "163": {
+            "info": {
+                "difficulty": 5,
+                "attack": 1,
+                "defense": 7,
+                "magic": 8
+            },
+            "name": "Taliyah",
             "title": "Die Felsenweberin",
-            "id": 163,
+            "image": {
+                "full": "Taliyah.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 432
+            },
             "key": "Taliyah",
-            "name": "Taliyah"
+            "id": 163
         },
         "164": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 6,
+                "magic": 3
+            },
+            "name": "Camille",
             "title": "Der stählerne Schatten",
-            "id": 164,
+            "image": {
+                "full": "Camille.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 240
+            },
             "key": "Camille",
-            "name": "Camille"
+            "id": 164
         },
         "201": {
+            "info": {
+                "difficulty": 3,
+                "attack": 3,
+                "defense": 9,
+                "magic": 4
+            },
+            "name": "Braum",
             "title": "Das Herz Freljords",
-            "id": 201,
+            "image": {
+                "full": "Braum.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 144
+            },
             "key": "Braum",
-            "name": "Braum"
+            "id": 201
         },
         "202": {
+            "info": {
+                "difficulty": 6,
+                "attack": 10,
+                "defense": 2,
+                "magic": 6
+            },
+            "name": "Jhin",
             "title": "Der Virtuose",
-            "id": 202,
+            "image": {
+                "full": "Jhin.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 240
+            },
             "key": "Jhin",
-            "name": "Jhin"
+            "id": 202
         },
         "203": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 2,
+                "magic": 2
+            },
+            "name": "Kindred",
             "title": "Die ewigen Jäger",
-            "id": 203,
+            "image": {
+                "full": "Kindred.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 336
+            },
             "key": "Kindred",
-            "name": "Kindred"
+            "id": 203
         },
         "222": {
+            "info": {
+                "difficulty": 6,
+                "attack": 9,
+                "defense": 2,
+                "magic": 4
+            },
+            "name": "Jinx",
             "title": "Die Schießwütige",
-            "id": 222,
+            "image": {
+                "full": "Jinx.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 288
+            },
             "key": "Jinx",
-            "name": "Jinx"
+            "id": 222
         },
         "223": {
+            "info": {
+                "difficulty": 5,
+                "attack": 3,
+                "defense": 9,
+                "magic": 6
+            },
+            "name": "Tahm Kench",
             "title": "Der König des Flusses",
-            "id": 223,
+            "image": {
+                "full": "TahmKench.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 384
+            },
             "key": "TahmKench",
-            "name": "Tahm Kench"
+            "id": 223
         },
         "236": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Lucian",
             "title": "Der Läuterer",
-            "id": 236,
+            "image": {
+                "full": "Lucian.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 192
+            },
             "key": "Lucian",
-            "name": "Lucian"
+            "id": 236
         },
         "238": {
+            "info": {
+                "difficulty": 7,
+                "attack": 9,
+                "defense": 2,
+                "magic": 1
+            },
+            "name": "Zed",
             "title": "Der Meister der Schatten",
-            "id": 238,
+            "image": {
+                "full": "Zed.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 288
+            },
             "key": "Zed",
-            "name": "Zed"
+            "id": 238
         },
         "240": {
+            "info": {
+                "difficulty": 7,
+                "attack": 8,
+                "defense": 2,
+                "magic": 2
+            },
+            "name": "Kled",
             "title": "Der übellaunige Streiter",
-            "id": 240,
+            "image": {
+                "full": "Kled.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 384
+            },
             "key": "Kled",
-            "name": "Kled"
+            "id": 240
         },
         "245": {
+            "info": {
+                "difficulty": 8,
+                "attack": 5,
+                "defense": 3,
+                "magic": 7
+            },
+            "name": "Ekko",
             "title": "Der Zeitbrecher",
-            "id": 245,
+            "image": {
+                "full": "Ekko.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 144
+            },
             "key": "Ekko",
-            "name": "Ekko"
+            "id": 245
         },
         "254": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Vi",
             "title": "Piltovers Vollstreckerin",
-            "id": 254,
+            "image": {
+                "full": "Vi.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 240
+            },
             "key": "Vi",
-            "name": "Vi"
+            "id": 254
         },
         "266": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 4,
+                "magic": 3
+            },
+            "name": "Aatrox",
             "title": "Die Klinge der Düsteren",
-            "id": 266,
+            "image": {
+                "full": "Aatrox.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 0
+            },
             "key": "Aatrox",
-            "name": "Aatrox"
+            "id": 266
         },
         "267": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 3,
+                "magic": 7
+            },
+            "name": "Nami",
             "title": "Die Gezeitenruferin",
-            "id": 267,
+            "image": {
+                "full": "Nami.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 240
+            },
             "key": "Nami",
-            "name": "Nami"
+            "id": 267
         },
         "268": {
+            "info": {
+                "difficulty": 9,
+                "attack": 6,
+                "defense": 3,
+                "magic": 8
+            },
+            "name": "Azir",
             "title": "Der Imperator des Sandes",
-            "id": 268,
+            "image": {
+                "full": "Azir.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 432
+            },
             "key": "Azir",
-            "name": "Azir"
+            "id": 268
         },
         "412": {
+            "info": {
+                "difficulty": 7,
+                "attack": 5,
+                "defense": 6,
+                "magic": 6
+            },
+            "name": "Thresh",
             "title": "Der Kettenwächter",
-            "id": 412,
+            "image": {
+                "full": "Thresh.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 144
+            },
             "key": "Thresh",
-            "name": "Thresh"
+            "id": 412
         },
         "420": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 6,
+                "magic": 3
+            },
+            "name": "Illaoi",
             "title": "Die Krakenpriesterin",
-            "id": 420,
+            "image": {
+                "full": "Illaoi.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 384
+            },
             "key": "Illaoi",
-            "name": "Illaoi"
+            "id": 420
         },
         "421": {
+            "info": {
+                "difficulty": 3,
+                "attack": 8,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Rek'Sai",
             "title": "Die Leerenwühlerin",
-            "id": 421,
+            "image": {
+                "full": "RekSai.png",
+                "group": "champion",
+                "sprite": "champion3.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 0
+            },
             "key": "RekSai",
-            "name": "Rek'Sai"
+            "id": 421
         },
         "427": {
+            "info": {
+                "difficulty": 7,
+                "attack": 3,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Ivern",
             "title": "Der Hüter der Haine",
-            "id": 427,
+            "image": {
+                "full": "Ivern.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 0
+            },
             "key": "Ivern",
-            "name": "Ivern"
+            "id": 427
         },
         "429": {
+            "info": {
+                "difficulty": 7,
+                "attack": 8,
+                "defense": 2,
+                "magic": 4
+            },
+            "name": "Kalista",
             "title": "Der Speer der Rache",
-            "id": 429,
+            "image": {
+                "full": "Kalista.png",
+                "group": "champion",
+                "sprite": "champion1.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 384
+            },
             "key": "Kalista",
-            "name": "Kalista"
+            "id": 429
         },
         "432": {
+            "info": {
+                "difficulty": 9,
+                "attack": 4,
+                "defense": 4,
+                "magic": 5
+            },
+            "name": "Bard",
             "title": "Der wandelnde Beschützer",
-            "id": 432,
+            "image": {
+                "full": "Bard.png",
+                "group": "champion",
+                "sprite": "champion0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 0
+            },
             "key": "Bard",
-            "name": "Bard"
+            "id": 432
         },
         "497": {
+            "info": {
+                "difficulty": 5,
+                "attack": 2,
+                "defense": 4,
+                "magic": 8
+            },
+            "name": "Rakan",
             "title": "Der Publikumsliebling",
-            "id": 497,
+            "image": {
+                "full": "Rakan.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 384
+            },
             "key": "Rakan",
-            "name": "Rakan"
+            "id": 497
         },
         "498": {
+            "info": {
+                "difficulty": 5,
+                "attack": 10,
+                "defense": 6,
+                "magic": 1
+            },
+            "name": "Xayah",
             "title": "Die Rebellin",
-            "id": 498,
+            "image": {
+                "full": "Xayah.png",
+                "group": "champion",
+                "sprite": "champion4.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 0
+            },
             "key": "Xayah",
-            "name": "Xayah"
+            "id": 498
         },
         "516": {
+            "info": {
+                "difficulty": 5,
+                "attack": 5,
+                "defense": 9,
+                "magic": 3
+            },
+            "name": "Ornn",
             "title": "Der Gott der Vulkanschmiede",
-            "id": 516,
+            "image": {
+                "full": "Ornn.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 144
+            },
             "key": "Ornn",
-            "name": "Ornn"
+            "id": 516
+        },
+        "555": {
+            "info": {
+                "difficulty": 7,
+                "attack": 9,
+                "defense": 3,
+                "magic": 1
+            },
+            "name": "Pyke",
+            "title": "Der Schlitzer vom Bluthafen",
+            "image": {
+                "full": "Pyke.png",
+                "group": "champion",
+                "sprite": "champion2.png",
+                "h": 48,
+                "w": 48,
+                "y": 96,
+                "x": 288
+            },
+            "key": "Pyke",
+            "id": 555
         }
     }
 }

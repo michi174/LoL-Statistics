@@ -1,24 +1,10 @@
 <div>
-    <div class="notification" id="req-state" style="overflow:auto; max-height: 250px; display:block;">
+    <div class="notification" id="req-state" style="overflow:auto; max-height: 250px; display:none;">
         <button class="delete"></button>
-        <span id="dev-console" class="subtitle">DEV Console</span>
-        <div id="req-msg" contentEditable="true">No messages available yet</div>
+        <small>
+            <span id="dev-console" class="subtitle">DEV Console</span>
+            <div id="req-msg" contentEditable="true"></div>
+        </small>
     </div>
-    <a onclick="toggleDevConsole()" class="button"><span id="console-status">Show</span>&nbsp;<span>DEV Console</span></a>
+    <a onclick="toggleDevConsole()" class="button is-small"><span id="console-status">Show</span>&nbsp;<span>DEV Console</span></a>
 </div>
-<script>
-    function toggleDevConsole()
-    {
-        console.log("click");
-        if(document.getElementById("req-state").style.display == "none")
-        {
-            document.getElementById("req-state").style.display = "block";
-            document.getElementById("console-status").innerHTML = "Hide";
-        }
-        else
-        {
-            document.getElementById("req-state").style.display = "none";
-            document.getElementById("console-status").innerHTML = "Show";
-        }
-    }
-</script>

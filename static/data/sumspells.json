@@ -1,0 +1,1732 @@
+{
+    "type": "summoner",
+    "version": "8.10.1",
+    "data": {
+        "1": {
+            "vars": [
+                {
+                    "coeff": [
+                        3
+                    ],
+                    "link": "@text",
+                    "key": "f1"
+                }
+            ],
+            "image": {
+                "full": "SummonerBoost.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 48
+            },
+            "costBurn": "0",
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "0.65",
+                "3",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "id": 1,
+            "cooldownBurn": "210",
+            "tooltip": "Entfernt alle kampfunfähig machenden Effekte (außer „Unterdrückung“ und „In die Luft geschleudert“) und Beschwörerzauber-Debuffs des Champions, und verringert {{ f1 }}&nbsp;Sekunden lang die Wirkungsdauer weiterer kampfunfähig machender Effekte um 65&nbsp;%.",
+            "maxrank": 1,
+            "rangeBurn": "200",
+            "description": "Entfernt alle kampfunfähig machenden Effekte (außer „Unterdrückung“ und „In die Luft geschleudert“) und Beschwörerzauber-Debuffs deines Champions, und verringert 3 Sekunden lang die Wirkdauer weiterer kampfunfähig machender Effekte um 65 %.",
+            "effect": [
+                null,
+                [
+                    0.65
+                ],
+                [
+                    3
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "key": "SummonerBoost",
+            "modes": [
+                "CLASSIC",
+                "ODIN",
+                "TUTORIAL",
+                "ARAM",
+                "ASCENSION",
+                "FIRSTBLOOD",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "PROJECT",
+                "ONEFORALL"
+            ],
+            "resource": "Keine Kosten",
+            "name": "Läuterung",
+            "costType": "Keine Kosten",
+            "sanitizedDescription": "Entfernt alle kampfunfähig machenden Effekte (außer „Unterdrückung“ und „In die Luft geschleudert“) und Beschwörerzauber-Debuffs deines Champions, und verringert 3 Sekunden lang die Wirkdauer weiterer kampfunfähig machender Effekte um 65 %.",
+            "sanitizedTooltip": "Entfernt alle kampfunfähig machenden Effekte (außer „Unterdrückung“ und „In die Luft geschleudert“) und Beschwörerzauber-Debuffs des Champions, und verringert {{ f1 }} Sekunden lang die Wirkungsdauer weiterer kampfunfähig machender Effekte um 65 %.",
+            "range": [
+                200
+            ],
+            "cooldown": [
+                210
+            ],
+            "summonerLevel": 9
+        },
+        "3": {
+            "cooldownBurn": "210",
+            "key": "SummonerExhaust",
+            "resource": "Keine Kosten",
+            "name": "Erschöpfen",
+            "costType": "Keine Kosten",
+            "image": {
+                "full": "SummonerExhaust.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 240
+            },
+            "sanitizedDescription": "Erschöpft den gewählten gegnerischen Champion, wodurch 2,5 Sekunden lang sein Lauftempo um 30 % und sein verursachter Schaden um 40 % verringert werden.",
+            "sanitizedTooltip": "Erschöpft den gewählten gegnerischen Champion, wodurch 2,5 Sekunden lang sein Lauftempo um {{ f3 }} % und sein verursachter Schaden um {{ f2 }} % verringert werden.",
+            "effect": [
+                null,
+                [
+                    2.5
+                ],
+                [
+                    40
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    30
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "tooltip": "Erschöpft den gewählten gegnerischen Champion, wodurch 2,5&nbsp;Sekunden lang sein Lauftempo um {{ f3 }}&nbsp;% und sein verursachter Schaden um {{ f2 }}&nbsp;% verringert werden.",
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "650",
+            "range": [
+                650
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "2.5",
+                "40",
+                "0",
+                "0",
+                "30",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 4,
+            "modes": [
+                "CLASSIC",
+                "ODIN",
+                "TUTORIAL",
+                "ARAM",
+                "ASCENSION",
+                "FIRSTBLOOD",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "ONEFORALL"
+            ],
+            "id": 3,
+            "cooldown": [
+                210
+            ],
+            "description": "Erschöpft den gewählten gegnerischen Champion, wodurch 2,5 Sekunden lang sein Lauftempo um 30 % und sein verursachter Schaden um 40 % verringert werden."
+        },
+        "4": {
+            "cooldownBurn": "300",
+            "key": "SummonerFlash",
+            "resource": "Keine Kosten",
+            "name": "Blitz",
+            "costType": "Keine Kosten",
+            "image": {
+                "full": "SummonerFlash.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 288
+            },
+            "sanitizedDescription": "Teleportiert deinen Champion sofort ein kurzes Stück in Richtung deines Mauszeigers.",
+            "sanitizedTooltip": "Teleportiert deinen Champion sofort ein kurzes Stück in Richtung deines Mauszeigers.",
+            "effect": [
+                null,
+                [
+                    400
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "tooltip": "Teleportiert deinen Champion sofort ein kurzes Stück in Richtung deines Mauszeigers.",
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "425",
+            "range": [
+                425
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "400",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 7,
+            "modes": [
+                "CLASSIC",
+                "ODIN",
+                "TUTORIAL",
+                "ARAM",
+                "ASCENSION",
+                "FIRSTBLOOD",
+                "ASSASSINATE",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "STARGUARDIAN",
+                "PROJECT",
+                "SNOWURF",
+                "ONEFORALL"
+            ],
+            "id": 4,
+            "cooldown": [
+                300
+            ],
+            "description": "Teleportiert deinen Champion sofort ein kurzes Stück in Richtung deines Mauszeigers."
+        },
+        "6": {
+            "vars": [
+                {
+                    "coeff": [
+                        27
+                    ],
+                    "link": "@text",
+                    "key": "f1"
+                }
+            ],
+            "image": {
+                "full": "SummonerHaste.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 336
+            },
+            "costBurn": "0",
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "27",
+                "0",
+                "2",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "id": 6,
+            "cooldownBurn": "180",
+            "tooltip": "Dein Champion erhält 10&nbsp;Sekunden lang erhöhtes Lauftempo und kann sich durch Einheiten hindurch bewegen. Gewährt nach einer Beschleunigung von 2&nbsp;Sekunden maximal {{ f1 }}&nbsp;% Lauftempo.",
+            "maxrank": 1,
+            "rangeBurn": "200",
+            "description": "Dein Champion erhält 10 Sekunden lang erhöhtes Lauftempo und kann sich durch Einheiten hindurch bewegen. Gewährt nach einer Beschleunigung von 2 Sekunden maximal 28–45 % (abhängig von der Champion-Stufe) Lauftempo.",
+            "effect": [
+                null,
+                [
+                    27
+                ],
+                [
+                    0
+                ],
+                [
+                    2
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "key": "SummonerHaste",
+            "modes": [
+                "CLASSIC",
+                "ODIN",
+                "TUTORIAL",
+                "ARAM",
+                "ASCENSION",
+                "FIRSTBLOOD",
+                "ASSASSINATE",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "STARGUARDIAN",
+                "PROJECT",
+                "ONEFORALL"
+            ],
+            "resource": "Keine Kosten",
+            "name": "Geist",
+            "costType": "Keine Kosten",
+            "sanitizedDescription": "Dein Champion erhält 10 Sekunden lang erhöhtes Lauftempo und kann sich durch Einheiten hindurch bewegen. Gewährt nach einer Beschleunigung von 2 Sekunden maximal 28–45 % (abhängig von der Champion-Stufe) Lauftempo.",
+            "sanitizedTooltip": "Dein Champion erhält 10 Sekunden lang erhöhtes Lauftempo und kann sich durch Einheiten hindurch bewegen. Gewährt nach einer Beschleunigung von 2 Sekunden maximal {{ f1 }} % Lauftempo.",
+            "range": [
+                200
+            ],
+            "cooldown": [
+                180
+            ],
+            "summonerLevel": 1
+        },
+        "7": {
+            "vars": [
+                {
+                    "coeff": [
+                        90,
+                        105,
+                        120,
+                        135,
+                        150,
+                        165,
+                        180,
+                        195,
+                        210,
+                        225,
+                        240,
+                        255,
+                        270,
+                        285,
+                        300,
+                        315,
+                        330,
+                        345
+                    ],
+                    "link": "@player.level",
+                    "key": "f1"
+                }
+            ],
+            "image": {
+                "full": "SummonerHeal.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 384
+            },
+            "costBurn": "0",
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "0.3",
+                "75",
+                "15",
+                "0.5",
+                "826",
+                "0.5",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "id": 7,
+            "cooldownBurn": "270",
+            "tooltip": "Stellt {{ f1 }}&nbsp;Leben wieder her und gewährt dir und einem anvisierten verbündeten Champion 1&nbsp;Sekunde lang 30&nbsp;% Lauftempo. Diese Heilung ist bei Einheiten, die vor kurzem mit diesem Beschwörerzauber geheilt wurden, halbiert.<br /><br /><span class=\"colorFFFF00\">Falls dieser Zauber kein Ziel findet, wird es auf den am schwersten verwundeten verbündeten Champion in Reichweite angewendet.</span>",
+            "maxrank": 1,
+            "rangeBurn": "850",
+            "description": "Stellt 90-345 (abhängig von der Champion-Stufe) Leben wieder her und gewährt dir und einem anvisierten verbündeten Champion 1 Sekunde lang 30 % Lauftempo. Diese Heilung ist bei Einheiten, die vor kurzem mit dem Beschwörerzauber „Heilen“ geheilt wurden, halbiert.",
+            "effect": [
+                null,
+                [
+                    0.3
+                ],
+                [
+                    75
+                ],
+                [
+                    15
+                ],
+                [
+                    0.5
+                ],
+                [
+                    826
+                ],
+                [
+                    0.5
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "key": "SummonerHeal",
+            "modes": [
+                "CLASSIC",
+                "ODIN",
+                "TUTORIAL",
+                "ARAM",
+                "ASCENSION",
+                "FIRSTBLOOD",
+                "ASSASSINATE",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "STARGUARDIAN",
+                "PROJECT",
+                "ONEFORALL"
+            ],
+            "resource": "Keine Kosten",
+            "name": "Heilen",
+            "costType": "Keine Kosten",
+            "sanitizedDescription": "Stellt 90-345 (abhängig von der Champion-Stufe) Leben wieder her und gewährt dir und einem anvisierten verbündeten Champion 1 Sekunde lang 30 % Lauftempo. Diese Heilung ist bei Einheiten, die vor kurzem mit dem Beschwörerzauber „Heilen“ geheilt wurden, halbiert.",
+            "sanitizedTooltip": "Stellt {{ f1 }} Leben wieder her und gewährt dir und einem anvisierten verbündeten Champion 1 Sekunde lang 30 % Lauftempo. Diese Heilung ist bei Einheiten, die vor kurzem mit diesem Beschwörerzauber geheilt wurden, halbiert. Falls dieser Zauber kein Ziel findet, wird es auf den am schwersten verwundeten verbündeten Champion in Reichweite angewendet.",
+            "range": [
+                850
+            ],
+            "cooldown": [
+                270
+            ],
+            "summonerLevel": 1
+        },
+        "11": {
+            "vars": [
+                {
+                    "coeff": [
+                        390,
+                        410,
+                        430,
+                        450,
+                        480,
+                        510,
+                        540,
+                        570,
+                        600,
+                        640,
+                        680,
+                        720,
+                        760,
+                        800,
+                        850,
+                        900,
+                        950,
+                        1000
+                    ],
+                    "link": "@player.level",
+                    "key": "f1"
+                }
+            ],
+            "image": {
+                "full": "SummonerSmite.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 192
+            },
+            "costBurn": "0",
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "15",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "id": 11,
+            "cooldownBurn": "15",
+            "tooltip": "Verursacht an ausgewählten epischen, großen und mittleren Monstern oder gegnerischen Vasallen <span class=\"colorFEFCFF\">{{ f1 }}</span>&nbsp;absoluten Schaden. Regeneriert bei Verwendung gegen Monster <span class=\"colorFFFFFF\">{{ f6 }}</span> <span class=\"colorFF6666\">(+{{ f7 }})</span>&nbsp;Leben.<br /><br />„Zerschmettern“ generiert alle {{ ammorechargetime }}&nbsp;Sekunden 1&nbsp;Ladung, bis zu einem Maximum von 2&nbsp;Ladungen.",
+            "maxrank": 1,
+            "rangeBurn": "500",
+            "description": "Verursacht an anvisierten epischen, großen und mittleren Monstern oder gegnerischen Vasallen 390–1000 absoluten Schaden (abhängig von der Championstufe). Regeneriert bei Verwendung gegen Monster abhängig von deinem maximalen Leben Gesundheit.",
+            "effect": [
+                null,
+                [
+                    15
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "key": "SummonerSmite",
+            "modes": [
+                "CLASSIC",
+                "TUTORIAL",
+                "FIRSTBLOOD",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "ONEFORALL"
+            ],
+            "resource": "Keine Kosten",
+            "name": "Zerschmettern",
+            "costType": "Keine Kosten",
+            "sanitizedDescription": "Verursacht an anvisierten epischen, großen und mittleren Monstern oder gegnerischen Vasallen 390–1000 absoluten Schaden (abhängig von der Championstufe). Regeneriert bei Verwendung gegen Monster abhängig von deinem maximalen Leben Gesundheit.",
+            "sanitizedTooltip": "Verursacht an ausgewählten epischen, großen und mittleren Monstern oder gegnerischen Vasallen {{ f1 }} absoluten Schaden. Regeneriert bei Verwendung gegen Monster {{ f6 }} (+{{ f7 }}) Leben. „Zerschmettern“ generiert alle {{ ammorechargetime }} Sekunden 1 Ladung, bis zu einem Maximum von 2 Ladungen.",
+            "range": [
+                500
+            ],
+            "cooldown": [
+                15
+            ],
+            "summonerLevel": 9
+        },
+        "12": {
+            "vars": [
+                {
+                    "coeff": [
+                        4
+                    ],
+                    "link": "@text",
+                    "key": "f1"
+                }
+            ],
+            "image": {
+                "full": "SummonerTeleport.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 336
+            },
+            "costBurn": "0",
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "4.5",
+                "200",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "id": 12,
+            "cooldownBurn": "300",
+            "tooltip": "Nach {{ f1 }}&nbsp;Sekunden Kanalisierung teleportiert sich dein Champion zu einer ausgewählten verbündeten Struktur, einem verbündeten Vasallen oder Auge.<br /><br />Erneutes Zaubern bricht die Teleportation ab und löst eine Abklingzeit von {{ f3 }}&nbsp;Sekunden aus.",
+            "maxrank": 1,
+            "rangeBurn": "25000",
+            "description": "Teleportiert deinen Champion, nach einer 4,5 Sekunden andauernden Kanalisierung, zu einer verbündeten Struktur oder einem verbündeten Vasallen oder Auge.",
+            "effect": [
+                null,
+                [
+                    4.5
+                ],
+                [
+                    200
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "key": "SummonerTeleport",
+            "modes": [
+                "CLASSIC",
+                "TUTORIAL",
+                "ASSASSINATE",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "ONEFORALL"
+            ],
+            "resource": "Keine Kosten",
+            "name": "Teleportation",
+            "costType": "Keine Kosten",
+            "sanitizedDescription": "Teleportiert deinen Champion, nach einer 4,5 Sekunden andauernden Kanalisierung, zu einer verbündeten Struktur oder einem verbündeten Vasallen oder Auge.",
+            "sanitizedTooltip": "Nach {{ f1 }} Sekunden Kanalisierung teleportiert sich dein Champion zu einer ausgewählten verbündeten Struktur, einem verbündeten Vasallen oder Auge. Erneutes Zaubern bricht die Teleportation ab und löst eine Abklingzeit von {{ f3 }} Sekunden aus.",
+            "range": [
+                25000
+            ],
+            "cooldown": [
+                300
+            ],
+            "summonerLevel": 7
+        },
+        "13": {
+            "vars": [
+                {
+                    "coeff": [
+                        190,
+                        220,
+                        250,
+                        280,
+                        310,
+                        340,
+                        370,
+                        400,
+                        430,
+                        460,
+                        490,
+                        520,
+                        550,
+                        580,
+                        610,
+                        640,
+                        670,
+                        700
+                    ],
+                    "link": "@player.level",
+                    "key": "f1"
+                },
+                {
+                    "coeff": [
+                        95,
+                        110,
+                        125,
+                        140,
+                        155,
+                        170,
+                        185,
+                        200,
+                        215,
+                        230,
+                        245,
+                        260,
+                        275,
+                        290,
+                        305,
+                        320,
+                        335,
+                        350
+                    ],
+                    "link": "@player.level",
+                    "key": "f2"
+                }
+            ],
+            "image": {
+                "full": "SummonerMana.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 432
+            },
+            "costBurn": "0",
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "50",
+                "25",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "id": 13,
+            "cooldownBurn": "240",
+            "tooltip": "Stellt bei deinem Champion {{ f1 }}&nbsp;% und bei nahen Verbündeten {{ f2 }}&nbsp;% des maximalen Manas wieder her.",
+            "maxrank": 1,
+            "rangeBurn": "600",
+            "description": "Stellt bei deinem Champion 50 % seines maximalen Manas und bei nahen Verbündeten jeweils 25 % ihres maximalen Manas wieder her.",
+            "effect": [
+                null,
+                [
+                    50
+                ],
+                [
+                    25
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "key": "SummonerMana",
+            "modes": [
+                "ODIN",
+                "ARAM",
+                "ASCENSION"
+            ],
+            "resource": "Keine Kosten",
+            "name": "Klarheit",
+            "costType": "Keine Kosten",
+            "sanitizedDescription": "Stellt bei deinem Champion 50 % seines maximalen Manas und bei nahen Verbündeten jeweils 25 % ihres maximalen Manas wieder her.",
+            "sanitizedTooltip": "Stellt bei deinem Champion {{ f1 }} % und bei nahen Verbündeten {{ f2 }} % des maximalen Manas wieder her.",
+            "range": [
+                600
+            ],
+            "cooldown": [
+                240
+            ],
+            "summonerLevel": 6
+        },
+        "14": {
+            "vars": [
+                {
+                    "coeff": [
+                        70,
+                        90,
+                        110,
+                        130,
+                        150,
+                        170,
+                        190,
+                        210,
+                        230,
+                        250,
+                        270,
+                        290,
+                        310,
+                        330,
+                        350,
+                        370,
+                        390,
+                        410
+                    ],
+                    "link": "@player.level",
+                    "key": "f1"
+                }
+            ],
+            "image": {
+                "full": "SummonerDot.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 192
+            },
+            "costBurn": "0",
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "5",
+                "11",
+                "5",
+                "100",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "id": 14,
+            "cooldownBurn": "210",
+            "tooltip": "Entzünden verursacht über 5&nbsp;Sekunden <span class=\"colorFEFCFF\">{{ f1 }}</span>&nbsp;absoluten Schaden am anvisierten gegnerischen Champion, gewährt Sicht auf das Ziel und verursacht für die Dauer klaffende Wunden.<br /><br /><rules>(Klaffende Wunden schwächen Heileffekte um 40&nbsp;%. Getarnte Einheiten werden hierdurch nicht aufgedeckt.)</rules>",
+            "maxrank": 1,
+            "rangeBurn": "600",
+            "description": "Entzündet den anvisierten gegnerischen Champion, verursacht dabei über 5 Sekunden 80–505 absoluten Schaden (abhängig von der Champion-Stufe), gewährt Sicht auf das Ziel und verringert für dieselbe Dauer jegliche Heileffekte, die auf ihn wirken.",
+            "effect": [
+                null,
+                [
+                    5
+                ],
+                [
+                    11
+                ],
+                [
+                    5
+                ],
+                [
+                    100
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "key": "SummonerDot",
+            "modes": [
+                "CLASSIC",
+                "ODIN",
+                "TUTORIAL",
+                "ARAM",
+                "ASCENSION",
+                "FIRSTBLOOD",
+                "ASSASSINATE",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "ONEFORALL"
+            ],
+            "resource": "Keine Kosten",
+            "name": "Entzünden",
+            "costType": "Keine Kosten",
+            "sanitizedDescription": "Entzündet den anvisierten gegnerischen Champion, verursacht dabei über 5 Sekunden 80–505 absoluten Schaden (abhängig von der Champion-Stufe), gewährt Sicht auf das Ziel und verringert für dieselbe Dauer jegliche Heileffekte, die auf ihn wirken.",
+            "sanitizedTooltip": "Entzünden verursacht über 5 Sekunden {{ f1 }} absoluten Schaden am anvisierten gegnerischen Champion, gewährt Sicht auf das Ziel und verursacht für die Dauer klaffende Wunden. (Klaffende Wunden schwächen Heileffekte um 40 %. Getarnte Einheiten werden hierdurch nicht aufgedeckt.)",
+            "range": [
+                600
+            ],
+            "cooldown": [
+                210
+            ],
+            "summonerLevel": 9
+        },
+        "21": {
+            "cooldownBurn": "180",
+            "key": "SummonerBarrier",
+            "resource": "Keine Kosten",
+            "name": "Barriere",
+            "costType": "Keine Kosten",
+            "image": {
+                "full": "SummonerBarrier.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 0
+            },
+            "sanitizedDescription": "Bewahrt deinen Champion 2 Sekunden lang vor 115-455 Schaden (abhängig von der Champion-Stufe).",
+            "sanitizedTooltip": "Bewahrt deinen Champion 2 Sekunden lang vor {{ f1 }} Schaden.",
+            "effect": [
+                null,
+                [
+                    95
+                ],
+                [
+                    20
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "tooltip": "Bewahrt deinen Champion 2&nbsp;Sekunden lang vor {{ f1 }}&nbsp;Schaden.",
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "1200",
+            "range": [
+                1200
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "95",
+                "20",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 4,
+            "modes": [
+                "ARAM",
+                "CLASSIC",
+                "TUTORIAL",
+                "ODIN",
+                "ASCENSION",
+                "FIRSTBLOOD",
+                "ASSASSINATE",
+                "URF",
+                "ARSR",
+                "DOOMBOTSTEEMO",
+                "STARGUARDIAN",
+                "PROJECT",
+                "ONEFORALL"
+            ],
+            "id": 21,
+            "cooldown": [
+                180
+            ],
+            "description": "Bewahrt deinen Champion 2 Sekunden lang vor 115-455 Schaden (abhängig von der Champion-Stufe)."
+        },
+        "30": {
+            "cooldownBurn": "10",
+            "key": "SummonerPoroRecall",
+            "resource": "Keine Kosten",
+            "name": "Zum König!",
+            "costType": "Keine Kosten",
+            "image": {
+                "full": "SummonerPoroRecall.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 0
+            },
+            "sanitizedDescription": "Begib dich schnell an die Seite des Porokönigs.",
+            "sanitizedTooltip": "Passiv: Wenn du einen gegnerischen Champion mit einem Poro triffst, erhält dein Team ein Porozeichen. Bei 10 Porozeichen beschwört dein Team den Porokönig, um an seiner Seite zu kämpfen. Solange der Porokönig aktiv ist, erhält keines der Teams weitere Porozeichen. Aktiv: Begib dich schnell an die Seite des Porokönigs. Kann nur ausgeführt werden, solange der Porokönig von deinem Team beschworen ist. „Poros rühren das Herz. Der Rest von euch ist nur wegen des Spaßes hier.“",
+            "effect": [
+                null,
+                [
+                    3000
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "tooltip": "<span class=\"colorFFE076\">Passiv:</span> Wenn du einen gegnerischen Champion mit einem Poro triffst, erhält dein Team ein Porozeichen. Bei 10 Porozeichen beschwört dein Team den Porokönig, um an seiner Seite zu kämpfen. Solange der Porokönig aktiv ist, erhält keines der Teams weitere Porozeichen.<br /><br /><span class=\"colorFFE076\">Aktiv:</span> Begib dich schnell an die Seite des Porokönigs. Kann nur ausgeführt werden, solange der Porokönig von deinem Team beschworen ist. <br /><br /><i><span class=\"colorFDD017\">„Poros rühren das Herz. Der Rest von euch ist nur wegen des Spaßes hier.“</span></i>",
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "200",
+            "range": [
+                200
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "3000",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 1,
+            "modes": [
+                "KINGPORO"
+            ],
+            "id": 30,
+            "cooldown": [
+                10
+            ],
+            "description": "Begib dich schnell an die Seite des Porokönigs."
+        },
+        "31": {
+            "cooldownBurn": "20",
+            "key": "SummonerPoroThrow",
+            "resource": "Keine Kosten",
+            "name": "Poroschleudern",
+            "costType": "Keine Kosten",
+            "image": {
+                "full": "SummonerPoroThrow.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 48
+            },
+            "sanitizedDescription": "Schleudere einen Poro auf deine Gegner. Sollte er treffen, kannst du anschließend schnell zu deinem Ziel kommen.",
+            "sanitizedTooltip": "Schleudert einen Poro über eine lange Strecke, der {{ f2 }} absoluten Schaden an der 1. getroffenen gegnerischen Einheit verursacht und absolute Sicht auf das getroffene Ziel gewährt. Diese Fähigkeit kann 3 Sekunden lang erneut ausgeführt werden, um zum getroffenen Ziel zu springen. Dadurch wird zusätzlich {{ f2 }} absoluter Schaden verursacht und die Abklingzeit vom nächsten Poroschleudern um {{ e4 }} Sekunden verringert. Poros können weder von Zauberschilden noch Windmauern aufgehalten werden, da sie Tiere sind und keine Zauber! „Poros sind ein Musterbeispiel für Aerodynamik in Runeterra.“",
+            "effect": [
+                null,
+                [
+                    20
+                ],
+                [
+                    10
+                ],
+                [
+                    3
+                ],
+                [
+                    5
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "tooltip": "Schleudert einen Poro über eine lange Strecke, der {{ f2 }}&nbsp;absoluten Schaden an der 1. getroffenen gegnerischen Einheit verursacht und <span class=\"coloree91d7\">absolute Sicht</span> auf das getroffene Ziel gewährt.<br /><br />Diese Fähigkeit kann 3&nbsp;Sekunden lang erneut ausgeführt werden, um zum getroffenen Ziel zu springen. Dadurch wird zusätzlich {{ f2 }}&nbsp;absoluter Schaden verursacht und die Abklingzeit vom nächsten Poroschleudern um {{ e4 }}&nbsp;Sekunden verringert.<br /><br />Poros können weder von Zauberschilden noch Windmauern aufgehalten werden, da sie Tiere sind und keine Zauber!<br /><br /><i><span class=\"colorFDD017\">„Poros sind ein Musterbeispiel für Aerodynamik in Runeterra.“</span></i>",
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "2500",
+            "range": [
+                2500
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "20",
+                "10",
+                "3",
+                "5",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 1,
+            "modes": [
+                "KINGPORO"
+            ],
+            "id": 31,
+            "cooldown": [
+                20
+            ],
+            "description": "Schleudere einen Poro auf deine Gegner. Sollte er treffen, kannst du anschließend schnell zu deinem Ziel kommen."
+        },
+        "32": {
+            "cooldownBurn": "80",
+            "key": "SummonerSnowball",
+            "resource": "Keine Kosten",
+            "name": "Markieren",
+            "costType": "Keine Kosten",
+            "image": {
+                "full": "SummonerSnowball.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 288
+            },
+            "sanitizedDescription": "Wirft in gerader Linie einen Schneeball auf deine Gegner. Trifft er einen Gegner, wird dieser markiert, wodurch du absolute Sicht auf ihn erhältst. Dein Champion kann anschließend schnell zum markierten Ziel reisen.",
+            "sanitizedTooltip": "Wirft über lange Distanz einen Schneeball, der {{ f1 }} absoluten Schaden an der ersten getroffenen gegnerischen Einheit verursacht und absolute Sicht auf sie gewährt. Trifft er einen Gegner, kann diese Fähigkeit binnen {{ e3 }} Sekunden erneut ausgeführt werden, um zur markierten Einheit zu springen, wodurch zusätzlich {{ f1 }} absoluter Schaden verursacht wird. Der Sprung zum Ziel verringert die Abklingzeit um {{ e4 }} %. Schneebälle werden nicht von Zauberschilden oder Geschosse abschwächenden Effekten aufgehalten.",
+            "effect": [
+                null,
+                [
+                    10
+                ],
+                [
+                    5
+                ],
+                [
+                    3
+                ],
+                [
+                    25
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "tooltip": "Wirft über lange Distanz einen Schneeball, der {{ f1 }}&nbsp;absoluten Schaden an der ersten getroffenen gegnerischen Einheit verursacht und <span class=\"coloree91d7\">absolute Sicht</span> auf sie gewährt. Trifft er einen Gegner, kann diese Fähigkeit binnen {{ e3 }}&nbsp;Sekunden erneut ausgeführt werden, um zur markierten Einheit zu springen, wodurch zusätzlich {{ f1 }}&nbsp;absoluter Schaden verursacht wird. Der Sprung zum Ziel verringert die Abklingzeit um {{ e4 }}&nbsp;%.<br /><br /><span class=\"colorFFFF00\">Schneebälle werden nicht von Zauberschilden oder Geschosse abschwächenden Effekten aufgehalten.</span>",
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "1600",
+            "range": [
+                1600
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "10",
+                "5",
+                "3",
+                "25",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 6,
+            "modes": [
+                "ARAM",
+                "FIRSTBLOOD"
+            ],
+            "id": 32,
+            "cooldown": [
+                80
+            ],
+            "description": "Wirft in gerader Linie einen Schneeball auf deine Gegner. Trifft er einen Gegner, wird dieser markiert, wodurch du absolute Sicht auf ihn erhältst. Dein Champion kann anschließend schnell zum markierten Ziel reisen."
+        },
+        "33": {
+            "cooldownBurn": "0",
+            "key": "SummonerSiegeChampSelect1",
+            "name": "Waffen",
+            "image": {
+                "full": "SummonerSiegeChampSelect1.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 96
+            },
+            "sanitizedDescription": "Bei der Nexus-Belagerung werden Beschwörerzauber durch Belagerungswaffen ersetzt. Gib Kristallsplitter aus, um beim Händler Einweg-Belagerungswaffen zu kaufen. Verwende die Tasten für die Beschwörungszauber, um sie zu aktivieren!",
+            "effect": [
+                null,
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "modes": [
+                "SIEGE"
+            ],
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "2500",
+            "range": [
+                2500
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 1,
+            "id": 33,
+            "cooldown": [
+                0
+            ],
+            "description": "Bei der Nexus-Belagerung werden Beschwörerzauber durch Belagerungswaffen ersetzt. Gib Kristallsplitter aus, um beim Händler Einweg-Belagerungswaffen zu kaufen. Verwende die Tasten für die Beschwörungszauber, um sie zu aktivieren!"
+        },
+        "34": {
+            "cooldownBurn": "0",
+            "key": "SummonerSiegeChampSelect2",
+            "name": "Waffen",
+            "image": {
+                "full": "SummonerSiegeChampSelect2.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 144
+            },
+            "sanitizedDescription": "Bei der Nexus-Belagerung werden Beschwörerzauber durch Belagerungswaffen ersetzt. Gib Kristallsplitter aus, um beim Händler Einweg-Belagerungswaffen zu kaufen. Verwende die Tasten für die Beschwörungszauber, um sie zu aktivieren!",
+            "effect": [
+                null,
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "modes": [
+                "SIEGE"
+            ],
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "2500",
+            "range": [
+                2500
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 1,
+            "id": 34,
+            "cooldown": [
+                0
+            ],
+            "description": "Bei der Nexus-Belagerung werden Beschwörerzauber durch Belagerungswaffen ersetzt. Gib Kristallsplitter aus, um beim Händler Einweg-Belagerungswaffen zu kaufen. Verwende die Tasten für die Beschwörungszauber, um sie zu aktivieren!"
+        },
+        "35": {
+            "cooldownBurn": "0",
+            "key": "SummonerDarkStarChampSelect1",
+            "name": "Beschwörerzauber deaktiviert",
+            "image": {
+                "full": "SummonerDarkStarChampSelect1.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 96
+            },
+            "sanitizedDescription": "Beschwörerzauber sind in diesem Modus deaktiviert.",
+            "effect": [
+                null,
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "modes": [
+                "DARKSTAR"
+            ],
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "2500",
+            "range": [
+                2500
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 1,
+            "id": 35,
+            "cooldown": [
+                0
+            ],
+            "description": "Beschwörerzauber sind in diesem Modus deaktiviert."
+        },
+        "36": {
+            "cooldownBurn": "0",
+            "key": "SummonerDarkStarChampSelect2",
+            "name": "Beschwörerzauber deaktiviert",
+            "image": {
+                "full": "SummonerDarkStarChampSelect2.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 0,
+                "x": 144
+            },
+            "sanitizedDescription": "Beschwörerzauber sind in diesem Modus deaktiviert.",
+            "effect": [
+                null,
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "modes": [
+                "DARKSTAR"
+            ],
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "2500",
+            "range": [
+                2500
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 1,
+            "id": 36,
+            "cooldown": [
+                0
+            ],
+            "description": "Beschwörerzauber sind in diesem Modus deaktiviert."
+        },
+        "39": {
+            "cooldownBurn": "80",
+            "key": "SummonerSnowURFSnowball_Mark",
+            "resource": "Keine Kosten",
+            "name": "Ultra-Markieren (blitzschnell)",
+            "costType": "Keine Kosten",
+            "image": {
+                "full": "SummonerSnowURFSnowball_Mark.png",
+                "group": "spell",
+                "sprite": "spell0.png",
+                "h": 48,
+                "w": 48,
+                "y": 48,
+                "x": 240
+            },
+            "sanitizedDescription": "Das ist ein Schneeball! Das ist ein Poro! Das ist … ähm, definitiv eins von beidem.",
+            "sanitizedTooltip": "Wirft über ungefähr eine extralange Distanzeinheit einen Schneeball, der {{ f1 }} absoluten Schaden an der 1. getroffenen gegnerischen Einheit verursacht und absolute Sicht auf das Ziel gewährt. Wenn du einen Gegner mit Ultra-Markieren triffst, kann diese Fähigkeit {{ e3 }} Sekunden lang erneut ausgeführt werden, um zur markierten Einheit zu springen, zusätzlich {{ f1 }} absoluter Schaden zu verursachen und den Respekt wildfremder Personen dir gegenüber um gefühlte 1 Millionen Prozent zu erhöhen. Falls dir Poros auf den Fersen sein sollten, dann wirf einfach einen Poro anstelle eines Schneeballs, weil … nun, weil wir einfach fiese Leute sind.",
+            "effect": [
+                null,
+                [
+                    10
+                ],
+                [
+                    5
+                ],
+                [
+                    3
+                ],
+                [
+                    0.25
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ],
+            "tooltip": "Wirft über ungefähr eine extralange Distanzeinheit einen Schneeball, der {{ f1 }}&nbsp;absoluten Schaden an der 1.&nbsp;getroffenen gegnerischen Einheit verursacht und <span class=\"coloree91d7\">absolute Sicht</span> auf das Ziel gewährt.<br /><br />Wenn du einen Gegner mit Ultra-Markieren triffst, kann diese Fähigkeit {{ e3 }}&nbsp;Sekunden lang erneut ausgeführt werden, um zur markierten Einheit zu springen, zusätzlich {{ f1 }}&nbsp;absoluter Schaden zu verursachen und den Respekt wildfremder Personen dir gegenüber um gefühlte 1 Millionen Prozent zu erhöhen.<br /><br />Falls dir Poros auf den Fersen sein sollten, dann wirf einfach einen Poro anstelle eines Schneeballs, weil&nbsp;… nun, weil wir einfach fiese Leute sind.",
+            "maxrank": 1,
+            "costBurn": "0",
+            "rangeBurn": "8000",
+            "range": [
+                8000
+            ],
+            "cost": [
+                0
+            ],
+            "effectBurn": [
+                "",
+                "10",
+                "5",
+                "3",
+                "0.25",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            "summonerLevel": 6,
+            "modes": [
+                "SNOWURF"
+            ],
+            "id": 39,
+            "cooldown": [
+                80
+            ],
+            "description": "Das ist ein Schneeball! Das ist ein Poro! Das ist … ähm, definitiv eins von beidem."
+        }
+    }
+}

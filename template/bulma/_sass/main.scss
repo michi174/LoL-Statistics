@@ -26,7 +26,14 @@ $family-sans-serif: "Helvetica", "Arial", sans-serif;
 $primary: $grey;
 $primary-invert: $pink-invert;
 
-// 4. Import the rest of Bulma
+
+
+.column.has-vcentered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
 #sum-wins{
     color: $green;
@@ -37,12 +44,51 @@ $primary-invert: $pink-invert;
 
 .is-win
 {
+    border: 1px solid $green !important;
     border-left:0.5em solid $green !important;
 }
 
 .is-loss
 {
+    border: 1px solid $pink !important;
     border-left:0.5em solid $pink !important;
 }
+.c-sum-icons
+{
+    display:flex !important;
+    flex-direction: row !important;
+}
 
+.image.is-circle
+{
+    border-radius: 50% !important;
+}
+
+.image.is-30x30
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.c-sum-spell-con div:first-child{
+    margin-bottom:4px;
+}
+.c-sum-spell-con div:last-child{
+    margin-top:4px;
+}
+
+.c-sum-rune-con div:first-child{
+    margin-bottom:4px;
+}
+.c-sum-rune-con div:last-child{
+    margin-top:4px;
+}
+
+.c-sum-icons div{
+    margin-left:2px;
+}
+
+
+// 4. Import the rest of Bulma
 @import "../node_modules/bulma/bulma";

@@ -1,3 +1,9 @@
+.column.has-vcentered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
 #sum-wins {
   color: #23d160; }
 
@@ -5,10 +11,39 @@
   color: #ff8080; }
 
 .is-win {
+  border: 1px solid #23d160 !important;
   border-left: 0.5em solid #23d160 !important; }
 
 .is-loss {
+  border: 1px solid #ff8080 !important;
   border-left: 0.5em solid #ff8080 !important; }
+
+.c-sum-icons {
+  display: flex !important;
+  flex-direction: row !important; }
+
+.image.is-circle {
+  border-radius: 50% !important; }
+
+.image.is-30x30 {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px; }
+
+.c-sum-spell-con div:first-child {
+  margin-bottom: 4px; }
+
+.c-sum-spell-con div:last-child {
+  margin-top: 4px; }
+
+.c-sum-rune-con div:first-child {
+  margin-bottom: 4px; }
+
+.c-sum-rune-con div:last-child {
+  margin-top: 4px; }
+
+.c-sum-icons div {
+  margin-left: 2px; }
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {

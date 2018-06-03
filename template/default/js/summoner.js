@@ -1,48 +1,26 @@
 
 const api_url = "http://michi-pc/steamclient/common/";
 var champions = null;
+var sumspells = null;
 
-var queues = new Array();
-queues['RANKED_SOLO_5x5'] = "Solo/Duo Rangliste";
+loadSumSpells();
+loadChampions();
 
-var tiers = new Array();
-tiers["BRONZE"] = "Bronze";
-tiers["SILVER"] = "Silber";
-tiers["GOLD"] = "Gold";
-tiers["PLATIN"] = "Platin";
-tiers["DIAMOND"] = "Diamant";
-tiers["MASTER"] = "Master";
-tiers["CHALLENGER"] = "Challenger";
+function getChmapionData(championId)
+{
+  return champions[championId];
+}
 
-var ranks = new Array();
-ranks['I'] = 1;
-ranks['II'] = 2;
-ranks['III'] = 3;
-ranks['IV'] = 4;
-ranks['V'] = 5;
+function getSumSpellData(spellId)
+{
+  return sumspells[spellId];
+}
 
-var lanes = new Array();
-lanes["BOTTOM"] = "Bot";
-lanes["BOT"] = "Bot";
-lanes["MID"] = "Mid";
-lanes["TOP"] = "Top";
-lanes["NONE"] = "Roam";
-lanes["MIDDLE"] = "Mid";
-lanes["JUNGLE"] = "Jungle";
-
-var roles = new Array();
-roles["DUO"] = "Duo";
-roles["DUO_CARRY"] = "Carry";
-roles["DUO_SUPPORT"] = "Support";
-roles["SOLO"] = "Solo";
-roles["NONE"] = "";
-
-
-function getChampions()
+function loadChampions()
 {
   getChamps_req = new XMLHttpRequest();
   getChamps_req.open("GET", api_url+"championinfo.php", true);
-  
+
   getChamps_req.onreadystatechange = function()
   {
     if(getChamps_req.readyState == 4)
@@ -50,6 +28,7 @@ function getChampions()
       try
       {
         champions = JSON.parse(getChamps_req.responseText);
+        addDevMsg("Champions geladen");
       }
       catch(e)
       {
@@ -61,21 +40,35 @@ function getChampions()
   getChamps_req.send(null);
 }
 
-getChampions();
-
-function getChmapionData(championId)
+function loadSumSpells()
 {
-  return champions[championId];
-}
+  getSumsp_req = new XMLHttpRequest();
+  getSumsp_req.open("GET", api_url+"sumspellinfo.php", true);
 
+  getSumsp_req.onreadystatechange = function()
+  {
+    if(getSumsp_req.readyState == 4)
+    {
+      try
+      {
+        sumspells = JSON.parse(getSumsp_req.responseText);
+        addDevMsg("Spells geladen");
+      }
+      catch(e)
+      {
+        console.log("error on getting champions from server");
+        console.log(getSumsp_req.responseText);
+      }
+    }
+  }
+  getSumsp_req.send(null);
+}
 
 function getSummon()
 {
-
-  document.getElementById("req-msg").innerHTML = "";
   document.getElementById("search-btn").classList.add("is-loading");
 
-  var summoner = document.getElementById("sum-name-inp").value;
+  var summoner = document.getElementById("sum-name-inp").value.replace(/ /g, '');
   var region = document.getElementById("sum-region").value;
   var error = false;
   var status = "";
@@ -95,7 +88,6 @@ function getSummon()
         var summoner = JSON.parse(sum_req.responseText);
         
         document.getElementById("sum-name").innerHTML = summoner.name;
-        document.getElementById("sum-match-name").innerHTML = summoner.name;
         document.getElementById("sum-lvl").innerHTML = summoner.summonerLevel;
         document.getElementById("sum-id").innerHTML = summoner.id;
         document.getElementById("sum-search-result").style.display = 'block';
@@ -130,6 +122,7 @@ function getSummon()
             catch(e)
             {
               error = true;
+              console.log(e);
             }
             addDevMsg(rank_req.responseText);
           }          
@@ -158,13 +151,11 @@ function getSummon()
               var matches = JSON.parse(match_req.responseText);
               var matches_length = matches.length;
 
-
-
               setTimeout(function()
               {
                 if(matches_length > 0)
                 {
-                  var max_match_results = 30;
+                  var max_match_results = 100;
                   max_match_results = (matches_length<max_match_results) ? matches_length : max_match_results;
 
                   var matches_html = "";
@@ -172,31 +163,80 @@ function getSummon()
                   for(var i = 0; i<max_match_results; i++)
                   {
                     var iswin = (matches[i].win == true) ? "is-win" : "is-loss";
-                    matches_html = matches_html +`
+                    var m_date = new Date(matches[i].timestamp);
 
-                    <tr>
-                      <td class="`+iswin+`" id="sum-match-champion-`+i+`">
-                        <span><img class="image is-64x64" src="https://ddragon.leagueoflegends.com/cdn/8.9.1/img/champion/`+getChmapionData(matches[i].champion).name+`.png"></span>
-                        <small><span>`+getChmapionData(matches[i].champion).name+` (`+matches[i].level+`)</span></small>
-                      </td>
-                      <td id="sum-match-queue-`+i+`"><small>`+matches[i].kills+`/`+matches[i].deaths+`/`+matches[i].assists+`</small></td>
-                      <td id="sum-match-lane-`+i+`"><small>`+lanes[matches[i].lane]+` | `+roles[matches[i].role]+`</small></td>
-                      <td id="sum-match-role-`+i+`"><small>`+matches[i].gold+` <br> `+matches[i].minions+`</small></td>
+                    var c_kda;
+
+                    if(matches[i].deaths != 0)
+                    {
+                      c_kda = ((matches[i].kills+matches[i].assists)/matches[i].deaths).toFixed(2);
+                    }
+                    else
+                    {
+                      c_kda = "Perfect";
+                    }
+                    
+                    matches_html = matches_html+`
+
+                    <div class="content"><small>
+                    <div class="columns is-mobile is-variable is-0 is-centered champion-info `+iswin+`">
+                      <div class="column has-vcentered-content">
+                        <div>`+queue_types[matches[i].queue]+`</div>
+                        <div>`+m_date.toLocaleDateString()+`</div>
+                        <div><strong>`+gameresults[matches[i].win]+`</strong></div>
+                        <div>`+(matches[i].gameDuration/60).toFixed(0)+` min</div>
+                      </div>
+                      <div class="column has-vcentered-content c-sum-icons is-narrow">
+                        <div class="c-pic-con">
+                            <img class="image is-circle is-64x64" src="https://ddragon.leagueoflegends.com/cdn/8.11.1/img/champion/`+getChmapionData(matches[i].champion).image.full+`">
+                        </div>
+                        <div class="c-sum-spell-con">
+                          <div class="c-sum-spell-1">
+                              <img class="image is-30x30" src="https://ddragon.leagueoflegends.com/cdn/8.11.1/img/spell/`+getSumSpellData(matches[i].spell1Id).image.full+`">
+                          </div>
+                          <div class="c-sum-spell-2">
+                              <img class="image is-30x30" src="https://ddragon.leagueoflegends.com/cdn/8.11.1/img/spell/`+getSumSpellData(matches[i].spell2Id).image.full+`">
+                          </div>
+                        </div>
+                        <div class="c-sum-rune-con">
+                          <div class="c-sum-rune-1">
+                            <img class="image is-30x30 is-circle" src="https://bulma.io/images/placeholders/128x128.png">
+                          </div>
+                          <div class="c-sum-rune-2">
+                              <img class="image is-30x30 is-circle" src="https://bulma.io/images/placeholders/128x128.png">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column has-vcentered-content c-kda-con">
+                        <div><strong><span>`+matches[i].kills+`</span>/<span>`+matches[i].deaths+`</span>/<span>`+matches[i].assists+`</span></strong></div>
+                        <div>`+c_kda+`</div>
+                      </div>
+                      <div class="column has-vcentered-content">
+                        <div><span>`+getChmapionData(matches[i].champion).name+`</span> (<span>`+matches[i].level+`</span>)</div>
+                        <div>`+matches[i].minions+`</div>
+                        <div>`+matches[i].gold+`</div>
+                        <div>{M_KP}</div> 
+                      </div>
                       
-                    </tr>`;
+                    </div>
+                    </small>
+                  </div>`;
+
+
                     if(i==max_match_results-1)
                     {
-                      document.getElementById("sum-matches-container").innerHTML = matches_html;
+                      //document.getElementById("sum-matches-container").innerHTML = matches_html;
                     }
-
+              
                   }
+                  document.getElementById("sum-matches-container").innerHTML = matches_html;
+                  console.log(matches_length+" matches loaded.");
                 }
                 else
                 {
                   console.log("no matches found");
                 }
               },0);
-
             }
             catch(e)
             {
@@ -209,11 +249,11 @@ function getSummon()
           }
         }
         match_req.send(null);
-        console.log("matches loaded");
       }
       catch(e)
       {
         error = true;
+        console.log(e);
       }
       addDevMsg(status);
     }
@@ -234,9 +274,4 @@ function getSummon()
     }
   }
   sum_req.send(null);
-}
-
-function addDevMsg(msg)
-{
-  document.getElementById("req-msg").innerHTML += msg+"<br><br>";
 }
