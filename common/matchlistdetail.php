@@ -26,6 +26,11 @@
     $duration = 0;
     $sumspell1 = 0;
     $sumspell2 = 0;
+    $perkPrimary = 0;
+    $perkSecondary = 0;
+    $teamId = 0;
+    $teamkills = 0;
+    $killParticipation = 0;
 
     $urls = Array();
 
@@ -65,6 +70,7 @@
                 }
             }
 
+
             $win = $players_match_data[$searched_playerId]["stats"]["win"];
             $kills = $players_match_data[$searched_playerId]["stats"]["kills"];
             $deaths = $players_match_data[$searched_playerId]["stats"]["deaths"];
@@ -74,7 +80,21 @@
             $level  = $players_match_data[$searched_playerId]["stats"]["champLevel"];
             $sumspell1  = $players_match_data[$searched_playerId]["spell1Id"];
             $sumspell2  = $players_match_data[$searched_playerId]["spell2Id"];
+            $perkPrimary = $players_match_data[$searched_playerId]["stats"]["perk0"];
+            $perkSecondary = $players_match_data[$searched_playerId]["stats"]["perkSubStyle"];
             $duration = $match_detailed_data["gameDuration"];
+            $teamId = $players_match_data[$searched_playerId]["teamId"];
+
+            $teamkills = 0;
+
+            foreach($match_detailed_data["participants"] as $participant => $participant_data)
+            {
+                if($participant_data["teamId"] == $teamId)
+                {
+                    $teamkills += $participant_data["stats"]["kills"];
+                }
+            }
+            $killParticipation = ($teamkills > 0) ? round(($kills+$assists) * 100 / $teamkills) : 0;
 
             $detailed_matches[$matchid] = $match_data;
             $detailed_matches[$matchid]["championName"] = $champions[$match_data["champion"]]["name"];
@@ -88,6 +108,12 @@
             $detailed_matches[$matchid]["gameDuration"] = $duration;
             $detailed_matches[$matchid]["spell1Id"] = $sumspell1;
             $detailed_matches[$matchid]["spell2Id"] = $sumspell2;
+            $detailed_matches[$matchid]["perkPrimaryStyle"] = $perkPrimary;
+            $detailed_matches[$matchid]["perkSubStyle"] = $perkSecondary;
+            $detailed_matches[$matchid]["teamkills"] = $teamkills;
+            $detailed_matches[$matchid]["killParticipation"] = $killParticipation;
+
+
 
 
         }

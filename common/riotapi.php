@@ -35,7 +35,7 @@
                 
                 if($this->status_code == 429)
                 {
-                    sleep(1);
+                    sleep(0.2);
                     $this->executeApi($url);
                 }
 

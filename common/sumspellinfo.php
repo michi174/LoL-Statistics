@@ -18,7 +18,4 @@
     {
         echo json_encode($file["data"]);
     }
-
-    
-
 ?>

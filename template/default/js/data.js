@@ -42,3 +42,5 @@ gameresults[false] = "Niederlage";
 var queue_types = new Array();
 queue_types[420] = "Rangliste";
 queue_types[430] = "Normal";
+queue_types[1200] = "Blitzpartie";
+queue_types[1020] = "Alle für Einen";

@@ -2,9 +2,11 @@
 const api_url = "http://michi-pc/steamclient/common/";
 var champions = null;
 var sumspells = null;
+var runes = null;
 
 loadSumSpells();
 loadChampions();
+loadRunes()
 
 function getChmapionData(championId)
 {
@@ -14,6 +16,17 @@ function getChmapionData(championId)
 function getSumSpellData(spellId)
 {
   return sumspells[spellId];
+}
+
+function getSumRune(runeId)
+{
+  for(var i = 0; i < runes.length; i++)
+  {
+    if(runes[i].id == runeId)
+    {
+      return runes[i];
+    }
+  }
 }
 
 function loadChampions()
@@ -56,12 +69,41 @@ function loadSumSpells()
       }
       catch(e)
       {
-        console.log("error on getting champions from server");
+        console.log("error on getting Summoner Spells from server");
         console.log(getSumsp_req.responseText);
       }
     }
   }
   getSumsp_req.send(null);
+}
+
+function loadRunes()
+{
+
+  
+
+  getRunes_req = new XMLHttpRequest();
+  getRunes_req.open("GET", api_url+"runesinfo.php", true);
+
+  getRunes_req.onreadystatechange = function()
+  {
+    
+    if(getRunes_req.readyState == 4)
+    {
+      try
+      {
+        runes = JSON.parse(getRunes_req.responseText);
+        addDevMsg("Runes geladen");
+      }
+      catch(e)
+      {
+        console.log("error on getting Runes from server");
+        console.log(e);
+        console.log(getRunes_req.responseText);
+      }
+    }
+  }
+  getRunes_req.send(null);
 }
 
 function getSummon()
@@ -92,7 +134,7 @@ function getSummon()
         document.getElementById("sum-id").innerHTML = summoner.id;
         document.getElementById("sum-search-result").style.display = 'block';
         document.getElementById("sum-pic").setAttribute('alt', summoner.profileIconId);
-        document.getElementById("sum-pic").setAttribute('src', 'http://ddragon.leagueoflegends.com/cdn/8.8.2/img/profileicon/' + summoner.profileIconId + '.png');
+        document.getElementById("sum-pic").setAttribute('src', 'http://ddragon.leagueoflegends.com/cdn/8.15.1/img/profileicon/' + summoner.profileIconId + '.png');
 
         //Ranking Request Start
         var rank_req = new XMLHttpRequest();
@@ -175,7 +217,7 @@ function getSummon()
                     {
                       c_kda = "Perfect";
                     }
-                    
+
                     matches_html = matches_html+`
 
                     <div class="content"><small>
@@ -200,24 +242,24 @@ function getSummon()
                         </div>
                         <div class="c-sum-rune-con">
                           <div class="c-sum-rune-1">
-                            <img class="image is-30x30 is-circle" src="https://bulma.io/images/placeholders/128x128.png">
+                            <img class="image is-30x30" src="static/files/images/perk/`+matches[i].perkPrimaryStyle+`.png" alt="`+getSumRune(matches[i].perkPrimaryStyle)+`">
                           </div>
                           <div class="c-sum-rune-2">
-                              <img class="image is-30x30 is-circle" src="https://bulma.io/images/placeholders/128x128.png">
+                              <img class="image is-30x30" src="static/files/images/perkStyle/`+matches[i].perkSubStyle+`.png" alt="`+getSumRune(matches[i].perkSubStyle).name+`">
                           </div>
                         </div>
                       </div>
                       <div class="column has-vcentered-content c-kda-con">
                         <div><strong><span>`+matches[i].kills+`</span>/<span>`+matches[i].deaths+`</span>/<span>`+matches[i].assists+`</span></strong></div>
-                        <div>`+c_kda+`</div>
+                        <div>`+c_kda+` KDA</div>
+                        <div>`+matches[i].killParticipation+`% KP</div> 
                       </div>
                       <div class="column has-vcentered-content">
                         <div><span>`+getChmapionData(matches[i].champion).name+`</span> (<span>`+matches[i].level+`</span>)</div>
-                        <div>`+matches[i].minions+`</div>
-                        <div>`+matches[i].gold+`</div>
-                        <div>{M_KP}</div> 
+                        <div>`+matches[i].minions+` CS (`+(matches[i].minions / ((matches[i].gameDuration/60).toFixed(0))).toFixed(2)+`)</div>
+                        <div>Gold: `+matches[i].gold+`</div>
+                        
                       </div>
-                      
                     </div>
                     </small>
                   </div>`;
