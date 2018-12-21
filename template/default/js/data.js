@@ -4,12 +4,14 @@ queues['RANKED_FLEX_SR'] = "Flexi 3v3 Rangliste";
 queues['RANKED_TEAM_5x5'] = "Flexi 5v5 Rangliste";
 
 var tiers = new Array();
+tiers["IRON"] = "Eisen";
 tiers["BRONZE"] = "Bronze";
 tiers["SILVER"] = "Silber";
 tiers["GOLD"] = "Gold";
 tiers["PLATINUM"] = "Platin";
 tiers["DIAMOND"] = "Diamant";
 tiers["MASTER"] = "Master";
+tiers["GRANDMASTER"] = "Großmeister";
 tiers["CHALLENGER"] = "Challenger";
 
 var ranks = new Array();
@@ -44,3 +46,5 @@ queue_types[420] = "Rangliste";
 queue_types[430] = "Normal";
 queue_types[1200] = "Blitzpartie";
 queue_types[1020] = "Alle für Einen";
+queue_types[840] = "Kooperativ";
+queue_types[400] = "Normal";

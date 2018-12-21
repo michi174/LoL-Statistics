@@ -1,17 +1,25 @@
 <?php
+
     header("Access-Control-Allow-Origin: *");
     header("Content-type:application/json");
     
     require_once("riotapi.php");
+    require_once 'roit_api/riotApi.php';
 
-    const MAX_MATCHES = 20;
+    const MAX_MATCHES = 10;
+    
+    $api = new RiotApi\RiotAPI();  
 
     $region = (isset($_GET["region"])) ? $_GET["region"] : "euw1";
     $accountId = (isset($_GET["accountId"])) ? $_GET["accountId"] : 214108484;
     $api_url = "http://".$_SERVER['HTTP_HOST']."/steamclient/common/";
+    
+    //$test   = ;
+    //die(var_dump($test));
 
-    $matches = json_decode(ApiRequest($api_url."matchlist.php?accountId=".$accountId."&region=".$region), true)["matches"];
-    $champions = json_decode(ApiRequest($api_url."championinfo.php"), true);
+    $matches = json_decode($api->getJSONFromURL($api_url."roit_api/index.php?api=matchlists&queryType=by-account&account=".$accountId."&region=".$region), true)["matches"];
+    
+    $champions = json_decode($api->getJSONFromURL($api_url."championinfo.php"), true);
     $player_data = null;
 
     $detailed_matches = Array();
@@ -41,18 +49,18 @@
 
     }
     
-    $matches_new = multiApiRequest($urls);
     
-    
+    $matches_new = $api->getResult($urls);
+
     foreach($matches as $matchid => $match_data)
     {
-        $match_detailed_data = json_decode($matches_new[$matchid], true);
+        $match_detailed_data = json_decode($matches_new[$matchid]["body"], true);
 
         /*DEBUG Info:
          * 
          * $match_detailed_json = utf8_encode(json_encode($match_detailed_data));
-        echo $match_detailed_json;
-        */
+         * echo $match_detailed_json;
+         */
 
         if(is_array($match_detailed_data))
         {
@@ -118,69 +126,11 @@
 
         }
         
-        if($matchid === MAX_MATCHES-1)
+        if($matchid === count($matches_new)-1)
         {
             break;
         }
     }
 
-
     echo utf8_encode(json_encode($detailed_matches));
-    
-    function multiApiRequest($urls)
-    {
-        $curly = Array();
-        $is_busy = null;
-        $matches = Array();
-        $mh = curl_multi_init();
-        
-        //Curl handles erzeugen
-        foreach($urls as $id => $match_data)
-        {
-            $curly[$id] = curl_init();
-            curl_setopt($curly[$id], CURLOPT_URL, $urls[$id]);
-            curl_setopt($curly[$id], CURLOPT_RETURNTRANSFER, true);
-            
-            
-            curl_multi_add_handle($mh, $curly[$id]);
-            
-            if($id === MAX_MATCHES-1)
-            {
-                break;
-            }
-            
-        }
-        
-        //Ausf�hren
-        do
-        {
-            $exec_response = curl_multi_exec($mh, $is_busy);
-            
-        } while($is_busy > 0);
-        
-        foreach($curly as $id => $handle)
-        {
-            $matches[$id] = curl_multi_getcontent($handle);
-        }
-        
-        curl_multi_close($mh);
-        
-        return $matches;
-        
-    }
-    
-    
-    
-    
-    function ApiRequest($url)
-    {
-        $ch = curl_init($url);
-        $mh = curl_multi_init();
-        
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $api_response = curl_exec($ch);
-        curl_close($ch);
-        
-        return $api_response;
-    }
 ?>

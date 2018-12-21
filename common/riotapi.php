@@ -2,7 +2,8 @@
     class RiotAPI
     {
 
-        const API_KEY = "RGAPI-61963597-82a1-41ac-9f0a-3e006fdc9deb"; //RIOT API Key hier eintragen.
+        //const API_KEY = "RGAPI-a459b8d4-44ea-4e40-abae-2663ad4450a5"; //DEV KEY
+        const API_KEY = "RGAPI-61963597-82a1-41ac-9f0a-3e006fdc9deb"; //RIOT API Key hier eintragen. //PROD KEY
         const API_URL = "api.riotgames.com/lol/";
 
         
@@ -10,7 +11,6 @@
         private $status_code    = 200;
         private $status_msg     = "";
         private $api_error      = "";
-
         private $api_response   = "";
 
         protected function buildApiUrl($api, $region, $param = "")
@@ -72,7 +72,7 @@
 
         public function getSummonerRank($summonerId, $region)
         {
-            $api = "league/v3/positions/by-summoner/";
+            $api = "league/v4/positions/by-summoner/";
             $url = $this->buildApiUrl($api, $region, $summonerId);
             $this->executeApi($url);
 

@@ -118,7 +118,8 @@ function getSummon()
   //Summoner Request Start
   var sum_req = new XMLHttpRequest();
   
-  sum_req.open("GET", api_url+"summoner.php?summoner="+summoner+"&region="+region, true);
+  //sum_req.open("GET", api_url+"summoner.php?summoner="+summoner+"&region="+region, true);
+  sum_req.open("GET", api_url+"/roit_api/index.php?api=summoners&queryType=by-name&name="+summoner+"&region="+region, true);
   
   sum_req.onreadystatechange = function()
   {
@@ -134,7 +135,7 @@ function getSummon()
         document.getElementById("sum-id").innerHTML = summoner.id;
         document.getElementById("sum-search-result").style.display = 'block';
         document.getElementById("sum-pic").setAttribute('alt', summoner.profileIconId);
-        document.getElementById("sum-pic").setAttribute('src', 'http://ddragon.leagueoflegends.com/cdn/8.15.1/img/profileicon/' + summoner.profileIconId + '.png');
+        document.getElementById("sum-pic").setAttribute('src', 'http://ddragon.leagueoflegends.com/cdn/8.24.1/img/profileicon/' + summoner.profileIconId + '.png');
 
         //Ranking Request Start
         var rank_req = new XMLHttpRequest();
@@ -181,6 +182,7 @@ function getSummon()
         </tr>`;
         var match_req = new XMLHttpRequest();
         match_req.open("GET", api_url+"matchlistdetail.php?accountId="+summoner.accountId+"&region="+region, true);
+        //v4 RIOT and new PHP API: sum_req.open("GET", api_url+"/roit_api/index.php?api=matchlists&queryType=by-account&account="+summoner.accountId+"&region="+region, true);
 
         console.log("start loading matches...");
 
@@ -307,6 +309,7 @@ function getSummon()
 
     if(error == true)
     {
+      document.getElementById("req-state").classList.remove("is-success");
       document.getElementById("req-state").classList.add("is-danger");
     }
     else
