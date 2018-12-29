@@ -8,11 +8,11 @@ abstract class baseAPI implements IRiotApis
 {
     
     protected $API_NAMESPACE;
-    protected $queryTypes;
+    protected $methods;
     protected $region;
     protected $apiVersion = "v4";
     protected $apiUrl;
-    protected $queryType = null;
+    protected $method = null;
     protected $queryString = null;
     protected $params;
 
@@ -22,9 +22,20 @@ abstract class baseAPI implements IRiotApis
         $this->region = $api->getRegion();
         $this->apiUrl = $api::API_URL;
         $this->apiVersion = $api::API_VERSION;
-        $this->setParam2Property("queryType", "queryType");
+        $this->setParam2Property("method", "method");
+        
+        if(!isset($this->method))
+        {
+            $this->method = "";
+        }
     }
-    
+
+    /**
+     * Legt einen Parameter als Eigenschaft der Klasse fest
+     * 
+     * @param unknown $param
+     * @param unknown $prop
+     */
     private function setParam2Property($param, $prop)
     {
         if(isset($this->params[$param]))
@@ -47,14 +58,19 @@ abstract class baseAPI implements IRiotApis
     
     protected function getQueryNameString()
     {
-        if(isset($this->params[$this->queryTypes[$this->queryType]["queryname"]]))
-            return $this->params[$this->queryTypes[$this->queryType]["queryname"]];
+        if(isset($this->params[$this->methods[$this->method]["queryname"]]))
+            return $this->params[$this->methods[$this->method]["queryname"]];
             else
             {
                 return "";
             }
     }
     
-    abstract public function getApiUrl() : string;   
+    public function getApiUrl() : string
+    {
+        return $this->buildApiUrl();
+    }
+    
+    abstract protected function buildApiUrl() : string;
 }
 

@@ -5,6 +5,8 @@ require_once 'autoloader.func.php';
 
 class RiotAPI
 {
+    //summoner: pE1cLS-RDFQAhH4Bkd8eOSXfjFF2Q61d-NE_xqIisxD3KeA;
+    
     /*
      * Your API Key here;
      */
@@ -17,6 +19,7 @@ class RiotAPI
     const OUTPUT_TYPE_ARRAY = "ARRAY";
     const API_VERSION = "v4";
     const API_URL = "api.riotgames.com/lol";
+    const DD_URL = "ddragon.leagueoflegends.com";
     
     private $regionEndpoints = Array();
     private $region = array("region" => "euw", "platform" => "euw1");
@@ -48,6 +51,51 @@ class RiotAPI
             return $this->$prop;
         }        
     }
+
+    /**
+     * Gibt die URL String der Static Data API zurï¿½ck.
+     * 
+     * @param string $api
+     * Kann nur CDN oder API sein.
+     * @param string $version
+     * Die aktuelle Version des LOL Clients
+     * @param string $namespace
+     * Data oder Img
+     * @param string $locale
+     * Sprache welche verwendet werden soll (de_DE)
+     * @param string $request
+     * ChampionFull.json oder Atrox.json wenn method angefï¿½hrt wird.
+     * @param string $method
+     * @return string
+     */
+    public function getStaticData() :string
+    {
+        
+        $method = "";
+        
+        if(array_key_exists("method", $this->params))
+        {
+            if($this->params["method"] != "")
+            {
+                $method = "/".$this->params["method"];
+            }
+        }
+        
+        $url= "https://"
+        .self::DD_URL
+        ."/".$this->params["api"]
+        ."/".$this->params["version"]
+        ."/data"
+        ."/".$this->params["locale"]
+        .$method
+        ."/".$this->params["request"].".json";
+        
+
+        //return $url;
+        return $this->getJSONFromURL($url);
+    }
+    
+
     
     public function execute()
     {
@@ -244,7 +292,8 @@ class RiotAPI
     }
     
     /**
-     * Liest den QueryString des Browsers ein und setzt die Optionen für die API
+     * Liest den QueryString des Browsers ein und setzt die Optionen fï¿½r die API
+     * 
      * @param String $queryString
      */
     public function setOptions(String $queryString)
@@ -325,6 +374,7 @@ class RiotAPI
         $this->apis['matchlists'] = "Matchlists";
         $this->apis['summoners'] = "Summoners";
         $this->apis['matches'] = "Matches";
+        $this->apis['positions'] = "Positions";
     }
 }
 ?>

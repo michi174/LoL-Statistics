@@ -17,9 +17,8 @@
     //$test   = ;
     //die(var_dump($test));
 
-    $matches = json_decode($api->getJSONFromURL($api_url."roit_api/index.php?api=matchlists&queryType=by-account&account=".$accountId."&region=".$region), true)["matches"];
+    $matches = json_decode($api->getJSONFromURL($api_url."roit_api/index.php?api=matchlists&method=by-account&account=".$accountId."&region=".$region), true)["matches"];
     
-    $champions = json_decode($api->getJSONFromURL($api_url."championinfo.php"), true);
     $player_data = null;
 
     $detailed_matches = Array();
@@ -39,26 +38,36 @@
     $teamId = 0;
     $teamkills = 0;
     $killParticipation = 0;
+    $item0 = 0;
+    $item1 = 0;
+    $item2 = 0;
+    $item3 = 0;
+    $item4 = 0;
+    $item5 = 0;
+    $item6 = 0;
 
     $urls = Array();
 
 
     foreach($matches as $id => $match_data)
     {
-        $urls[$id] = $api_url."matchdetails.php?matchId=".$match_data["gameId"]."&region=".$region;
-
+        $urls[$id] = $api_url."roit_api/index.php?api=matches&matchid=".$match_data["gameId"]."&region=".$region;
     }
     
     
     $matches_new = $api->getResult($urls);
+    
+    
 
     foreach($matches as $matchid => $match_data)
     {
+        //die(var_dump($matches_new));
+        //die(var_dump($matches_new[$matchid]["body"]));
         $match_detailed_data = json_decode($matches_new[$matchid]["body"], true);
 
         /*DEBUG Info:
          * 
-         * $match_detailed_json = utf8_encode(json_encode($match_detailed_data));
+         * $match_detailed_json = json_encode($match_detailed_data);
          * echo $match_detailed_json;
          */
 
@@ -67,10 +76,12 @@
             $players = $match_detailed_data["participantIdentities"];
             $players_match_data = $match_detailed_data["participants"];
             $searched_playerId = null;
+            $partId = null;
 
             foreach($players as $playerId => $playerData)
             {
                 $searched_playerId = $playerId;
+                $partId = $playerData["participantId"];
 
                 if($playerData["player"]["accountId"] == $accountId)
                 {
@@ -92,6 +103,14 @@
             $perkSecondary = $players_match_data[$searched_playerId]["stats"]["perkSubStyle"];
             $duration = $match_detailed_data["gameDuration"];
             $teamId = $players_match_data[$searched_playerId]["teamId"];
+            $item0 = $players_match_data[$searched_playerId]["stats"]["item0"];
+            $item1 = $players_match_data[$searched_playerId]["stats"]["item1"];
+            $item2 = $players_match_data[$searched_playerId]["stats"]["item2"];
+            $item3 = $players_match_data[$searched_playerId]["stats"]["item3"];
+            $item4 = $players_match_data[$searched_playerId]["stats"]["item4"];
+            $item5 = $players_match_data[$searched_playerId]["stats"]["item5"];
+            $item6 = $players_match_data[$searched_playerId]["stats"]["item6"];
+            
 
             $teamkills = 0;
 
@@ -105,7 +124,6 @@
             $killParticipation = ($teamkills > 0) ? round(($kills+$assists) * 100 / $teamkills) : 0;
 
             $detailed_matches[$matchid] = $match_data;
-            $detailed_matches[$matchid]["championName"] = $champions[$match_data["champion"]]["name"];
             $detailed_matches[$matchid]["win"] = $win;
             $detailed_matches[$matchid]["kills"] = $kills;
             $detailed_matches[$matchid]["assists"] = $assists;
@@ -120,6 +138,16 @@
             $detailed_matches[$matchid]["perkSubStyle"] = $perkSecondary;
             $detailed_matches[$matchid]["teamkills"] = $teamkills;
             $detailed_matches[$matchid]["killParticipation"] = $killParticipation;
+            $detailed_matches[$matchid]["item0"] = $item0;
+            $detailed_matches[$matchid]["item1"] = $item1;
+            $detailed_matches[$matchid]["item2"] = $item2;
+            $detailed_matches[$matchid]["item3"] = $item3;
+            $detailed_matches[$matchid]["item4"] = $item4;
+            $detailed_matches[$matchid]["item5"] = $item5;
+            $detailed_matches[$matchid]["item6"] = $item6;
+            $detailed_matches[$matchid]["raw"] = $match_detailed_data;
+            $detailed_matches[$matchid]["partId"] = $partId;
+            
 
 
 
@@ -132,5 +160,5 @@
         }
     }
 
-    echo utf8_encode(json_encode($detailed_matches));
+    echo json_encode($detailed_matches);
 ?>

@@ -17,6 +17,10 @@ $pink: #ff8080;
 
 $grey: #171a21;
 
+$lightgrey: #f5f5f5;
+
+
+
 $pink-invert: #fff;
 // Update the sans-serif font family
 $family-sans-serif: "Helvetica", "Arial", sans-serif;
@@ -26,8 +30,39 @@ $family-sans-serif: "Helvetica", "Arial", sans-serif;
 $primary: $grey;
 $primary-invert: $pink-invert;
 
+.rotate-180{
+    transform:rotate(180deg);
+    transition: all 400ms;
+}
+
+.rotate-360
+{
+    transform:rotate(360deg);
+    transition: all 400ms;
+}
 
 
+.match-detail-data{
+    display: none;
+}
+
+.summoner-pick{
+    padding-bottom: 0.25rem !important;
+    padding-top: 0.25rem !important;
+}
+
+.summoner-pick img
+{
+    border: 2px solid darkgray;
+}
+
+.summoner-pick:hover img{
+    border-color: $blue;
+}
+
+.summoner-pick.selected img{
+    border-color: $blue;
+}
 .column.has-vcentered-content {
     display: flex;
     flex-direction: column;
@@ -38,20 +73,135 @@ $primary-invert: $pink-invert;
 #sum-wins{
     color: $green;
 }
+
 #sum-loss{
     color: $pink;
 }
 
+.mobile-match-infos
+{
+    margin-top: 0 !important;
+}
+
+.c-table-row{
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+.c-table-col{
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+
+.c-table-header
+{
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    border: 1px solid #eee;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    text-indent: 5px;
+    box-shadow: lightgray 0px 0px 10px 0px;
+    
+}
+
+.data-clickable-header{
+    line-height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+}
+
+.data-container{
+    padding-left: 0.25rem;
+    padding-right: 15px;
+}
+
+.has-radius-5{
+    border-radius: 5px;
+}
+
+.no-margin-top
+{
+    margin-top: 0px !important;
+}
+.no-margin-bottom
+{
+    margin-bottom: 0px !important;
+}
+
+.champion-info
+{
+    padding: 0.75em;
+}
+
+.items-wrapper
+{
+    border-bottom:0px solid;
+    //margin-top: 0px !important;
+}
+
+.tabs-view
+{
+    line-height: 40px;
+}
+
+.match-detail-seperator
+{
+    border-bottom:1px solid $lightgrey;
+}
+
+.has-margin-4
+{
+    margin:4px;
+}
+
+.has-margin-8-left-right
+{
+    margin-left:8px !important;
+    margin-right:8px !important;
+}
+
+.win-bg{
+    background-color: $green;
+}
+
+.loss-bg{
+    background-color: $pink;
+}
+
+.default-bg
+{
+    background-color: $lightgrey;
+}
+
+
+
+.match-data-wrapper
+{
+    border:1px solid;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.is-win-border-color
+{
+    border-color: $green;
+}
+
+.is-loss-border-color
+{
+    border-color: $pink;
+}
+
 .is-win
 {
-    border: 1px solid $green !important;
-    border-left:0.5em solid $green !important;
+    border-left:0em solid $green !important;
 }
 
 .is-loss
 {
-    border: 1px solid $pink !important;
-    border-left:0.5em solid $pink !important;
+    border-left:0em solid $pink !important;
 }
 .c-sum-icons
 {

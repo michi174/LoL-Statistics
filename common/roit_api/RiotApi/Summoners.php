@@ -7,7 +7,7 @@ use RiotApi\RiotAPI;
 class Summoners extends baseAPI
 {
     protected $API_NAMESPACE = "summoner";
-    protected $queryTypes = array(
+    protected $methods = array(
         "by-name" => array(
             "name" => "by-name", 
             "queryname" => "name"
@@ -33,31 +33,22 @@ class Summoners extends baseAPI
         parent::__construct($api);
     }
     
-    /**
-     * 
-     * {@inheritDoc}
-     * @see \RiotApi\IRiotApis::getApiUrl()
-     */
-    public function getApiUrl() : string
-    {
-        return $this->buildApiUrl();
-    }
     
-    private function buildApiUrl()
+    protected function buildApiUrl() :string
     {
-        if(isset($this->queryType))
+        if(isset($this->method))
         {
             return "https://".$this->region["platform"]
             .".".$this->apiUrl."/".$this->API_NAMESPACE
             ."/".$this->apiVersion
             ."/".strtolower(substr(strrchr(__CLASS__, "\\"), 1))
-            ."/".$this->queryTypes[$this->queryType]["name"]
-            .$this->not2SeperatorHelper("by-summoner-id", $this->queryType)
+            ."/".$this->methods[$this->method]["name"]
+            .$this->not2SeperatorHelper("by-summoner-id", $this->method)
             .$this->getQueryNameString();
         }
         else
         {
-            die("Error: No queryType set in given URL! ".$_SERVER['PHP_SELF']."?".$_SERVER['QUERY_STRING'].debug_print_backtrace());
+            die("Error: No method set in given URL! ".$_SERVER['PHP_SELF']."?".$_SERVER['QUERY_STRING'].debug_print_backtrace());
         }
     }
 }

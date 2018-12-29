@@ -9,9 +9,9 @@
                 <div class="control has-icons-left">
                     <div class="select is-rounded">
                         <select id="sum-region">
-                          <option value="euw1">EU West</option>
-                          <option value="eun1">EU North</option>
-                          <option value="na1">NA</option>
+                          <option value="euw">EU West</option>
+                          <option value="eune">EU North</option>
+                          <option value="na">NA</option>
                           <option value="kr">KR</option>
                         </select>
                     </div>
@@ -34,49 +34,8 @@
                   </div>
               </div>
             </div>
-            <!--
-            <div class="content">
-              <div class="columns is-mobile is-variable is-0 is-centered champion-info">
-                <div class="column has-vcentered-content">
-                  <div>{Q_TYPE}</div>
-                  <div>{M_DATE}</div>
-                  <div>{WIN_LOSS}</div>
-                  <div>{M_DUR}</div> 
-                </div>
-                <div class="column has-vcentered-content c-sum-icons">
-                  <div class="c-pic-con">
-                      <img class="image is-circle is-64x64" src="https://bulma.io/images/placeholders/128x128.png">
-                  </div>
-                  <div class="c-sum-spell-con">
-                    <div class="c-sum-spell-1">
-                        <img class="image is-30x30" src="https://bulma.io/images/placeholders/128x128.png">
-                    </div>
-                    <div class="c-sum-spell-2">
-                        <img class="image is-30x30" src="https://bulma.io/images/placeholders/128x128.png">
-                    </div>
-                  </div>
-                  <div class="c-sum-rune-con">
-                    <div class="c-sum-rune-1">
-                      <img class="image is-30x30 is-circle" src="https://bulma.io/images/placeholders/128x128.png">
-                    </div>
-                    <div class="c-sum-rune-2">
-                        <img class="image is-30x30 is-circle" src="https://bulma.io/images/placeholders/128x128.png">
-                    </div>
-                  </div>
-                </div>
-                <div class="column has-vcentered-content c-kda-con">
-                  <div><span>{C_K}</span>/<span>{C_D}</span>/<span>{C_A}</span></div>
-                  <div>{C_CALC_KDA}</div>
-                </div>
-                <div class="column has-vcentered-content">
-                  <div><span>{C_NAME}</span> (<span>{C_LVL}</span>)</div>
-                  <div>{C_CS}</div>
-                  <div>{C_GOLD}</div>
-                  <div>{M_DUR}</div> 
-                </div>
-              </div>
-            </div>
-            -->
+
+            <!-- Summoner Data -->
             <div id="sum-search-result" class="content" style="display: none">
               <div class="box">
                 <article class="media">
@@ -88,7 +47,7 @@
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <strong><span id="sum-name">Summoner Name</span></strong><small> ID: <span id="sum-id"></span></small>
+                        <strong><span id="sum-name">Summoner Name</span></strong>
                         <br>
                         <small>Level <span id="sum-lvl">0</span></small>
                       </p>
@@ -104,20 +63,9 @@
                   </div>
                 </article>
               </div>
+
               <div id="sum-matchlist">
-                <!--
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Champion</th>
-                        <th>K/D/A</th>
-                        <th>Lane</th>
-                        <th>Stats</th>
-                      </tr>
-                    </thead>
-                    <tbody id="sum-matches-container">
-                    </tbody>
-                  </table> -->
+
                   <div id="sum-matches-container"></div>
               </div>
             </div>
