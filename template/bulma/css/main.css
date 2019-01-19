@@ -6,6 +6,80 @@
   transform: rotate(360deg);
   transition: all 400ms; }
 
+.champion-overview {
+  border: 1px solid #eee; }
+
+.champion-overview > .team:not(:first-child) {
+  border-left: 1px solid #eee; }
+
+.team .champion:not(:last-child) {
+  border-bottom: 1px solid #eee; }
+
+.team .champion {
+  font-size: 14px; }
+
+.team-name {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0px !important; }
+
+.champion-container {
+  display: block !important; }
+
+.team .champion-info-small {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; }
+
+.team .champion-info-icon-container {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0px;
+  margin-bottom: 0px !important; }
+
+.team .champion-info-icon-container div {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important; }
+
+.c-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #eee; }
+
+.c-tabs > .c-tab:not(:last-child) {
+  border-right: 1px solid #eee; }
+
+.c-tab {
+  flex-grow: 1;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer; }
+
+.c-tab.selected {
+  background-color: rgba(216, 211, 211, 0.2);
+  color: #06bcef;
+  border-bottom: 2px solid;
+  margin-bottom: -1px; }
+
+.c-tab:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px #06bcef;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  margin-bottom: -2px; }
+
+.c-tab:hover {
+  background-color: rgba(216, 211, 211, 0.2); }
+
+.c-tab:hover:after {
+  transform: scaleX(1); }
+
+.c-tab.selected {
+  font-weight: bold; }
+
 .match-detail-data {
   display: none; }
 
@@ -25,7 +99,6 @@
 .column.has-vcentered-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center; }
 
 #sum-wins {
@@ -88,6 +161,9 @@
 .has-margin-4 {
   margin: 4px; }
 
+.has-margin-2 {
+  margin: 2px; }
+
 .has-margin-8-left-right {
   margin-left: 8px !important;
   margin-right: 8px !important; }
@@ -99,12 +175,19 @@
   background-color: #ff8080; }
 
 .default-bg {
-  background-color: #f5f5f5; }
+  background-color: #718a90;
+  color: white; }
+
+.summoner-view {
+  display: none; }
 
 .match-data-wrapper {
   border: 1px solid;
   border-radius: 5px;
   font-size: 14px; }
+
+.match-data {
+  display: none; }
 
 .is-win-border-color {
   border-color: #23d160; }
@@ -121,6 +204,10 @@
 .c-sum-icons {
   display: flex !important;
   flex-direction: row !important; }
+
+.c-pic-con {
+  min-height: 64px;
+  min-width: 64px; }
 
 .image.is-circle {
   border-radius: 50% !important; }
