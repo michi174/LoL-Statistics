@@ -175,24 +175,24 @@ function getparticipantData(matchID, participantID) {
     let sPersonal = {
         cHeaderTitle: "Champion",
         cBodyVisability: "block",
-        champLevel: "Level",
         kills: "Kills",
         deaths: "Tode",
-        assists: "Assists",
-        largestKillingSpree: "Killing Spree",
-        largestMultiKill: "Multi Kill",
+        assists: "Unterstützungen",
+        champLevel: "Level",
+        largestKillingSpree: "Blutrausch",
+        largestMultiKill: "Mehrfachtötung",
         longestTimeSpentLiving: "Längste Zeit am Leben"
     };
 
     let sFarm = {
         cHeaderTitle: "Farm",
         cBodyVisability: "none",
+        goldEarned: "Gold erhalten",
+        goldSpent: "Gold ausgegeben",
         totalMinionsKilled: "Vasallen getötet",
         neutralMinionsKilled: "Monster getötet",
-        neutralMinionsKilledTeamJungle: "Monster getötet im eigenen Jgl",
-        neutralMinionsKilledEnemyJungle: "Monster getötet im gegn. Jgl",
-        goldEarned: "Gold",
-        goldSpent: "Gold ausgegeben",
+        neutralMinionsKilledTeamJungle: "Monster getötet im eigenen Jungle",
+        neutralMinionsKilledEnemyJungle: "Monster getötet im gegnerischen Jungle"
     };
 
     let sDamage = {
@@ -200,12 +200,12 @@ function getparticipantData(matchID, participantID) {
         cBodyVisability: "block",
         totalDamageDealt: "Schaden (gesamt)",
         totalDamageDealtToChampions: "Schaden an Champions",
-        magicDamageDealtToChampions: "Mag. Schaden an Champions",
-        physicalDamageDealtToChampions: "Pys. Schaden an Champions",
-        trueDamageDealtToChampions: "Abs. Schaden an Champions",
-        largestCriticalStrike: "Max. kritischer Treffer",
-        damageDealtToObjectives: "Schaden an Objekte",
-        damageDealtToTurrets: "Schaden an Türme"
+        magicDamageDealtToChampions: "Magischer Schaden an Champions",
+        physicalDamageDealtToChampions: "Physischer Schaden an Champions",
+        trueDamageDealtToChampions: "Absoluter Schaden an Champions",
+        largestCriticalStrike: "Höchster kritischer Treffer",
+        damageDealtToObjectives: "Schaden an Objekten",
+        damageDealtToTurrets: "Schaden an Türmen"
 
     };
 
@@ -215,9 +215,9 @@ function getparticipantData(matchID, participantID) {
         totalHeal: "Geheilter Schaden",
         damageSelfMitigated: "Verhinderter Schaden",
         totalDamageTaken: "Erlittener Schaden",
-        magicalDamageTaken: "Erlittener mag. Schaden",
-        physicalDamageTaken: "Erlittener phy. Schaden",
-        trueDamageTaken: "Erlittener abs. Schaden"
+        magicalDamageTaken: "Erlittener magischer Schaden",
+        physicalDamageTaken: "Erlittener physischer Schaden",
+        trueDamageTaken: "Erlittener absoluter Schaden"
     };
 
     let sVision = {

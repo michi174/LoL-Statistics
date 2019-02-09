@@ -48,3 +48,4 @@ queue_types[1200] = "Blitzpartie";
 queue_types[1020] = "Alle für Einen";
 queue_types[840] = "Kooperativ";
 queue_types[400] = "Normal";
+queue_types[900] = "U.R.F.";
