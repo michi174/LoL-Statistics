@@ -68,6 +68,7 @@ abstract class baseAPI implements IRiotApis
     
     public function getApiUrl() : string
     {
+        //die($this->buildApiUrl());
         return $this->buildApiUrl();
     }
     

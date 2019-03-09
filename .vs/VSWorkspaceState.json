@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\libs",
+    "\\libs\\js",
+    "\\template",
+    "\\template\\default",
+    "\\template\\default\\js",
+    "\\template\\default\\templates",
+    "\\view",
+    "\\view\\head",
+    "\\view\\index"
+  ],
+  "SelectedNode": "\\template\\default\\js\\default.js",
+  "PreviewInSolutionExplorer": false
+}

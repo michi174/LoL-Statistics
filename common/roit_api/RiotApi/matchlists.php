@@ -22,8 +22,10 @@ class Matchlists extends baseAPI
     {
         if(isset($this->method))
         {
-            return "https://".$this->region["platform"]
-            .".".$this->apiUrl."/".$this->API_NAMESPACE
+            return "https://"
+            .$this->region["platform"]
+            .".".$this->apiUrl
+            ."/".$this->API_NAMESPACE
             ."/".$this->apiVersion
             ."/".strtolower(substr(strrchr(__CLASS__, "\\"), 1))
             ."/".$this->methods[$this->method]["name"]

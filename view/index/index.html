@@ -1,74 +1,83 @@
 
-    <section class="section">
-      <div class="container">
+<section class="section">
+    <div class="container">
         <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <div class="content">
-              <h3>Suche deinen Beschwörer</h3>
-              <div class="field has-addons has-addons-centered">
-                <div class="control has-icons-left">
-                    <div class="select is-rounded">
-                        <select id="sum-region">
-                          <option value="euw">EU West</option>
-                          <option value="eune">EU North</option>
-                          <option value="na">NA</option>
-                          <option value="kr">KR</option>
-                        </select>
+            <div class="column is-8-desktop is-offset-2-desktop">
+                <div class="content">
+                    <h3>Suche deinen Beschwörer</h3>
+                    <div class="field has-addons has-addons-centered">
+                        <div class="control has-icons-left">
+                            <div class="select is-rounded">
+                                <select id="sum-region">
+                                    <option value="euw">EU West</option>
+                                    <option value="eune">EU North</option>
+                                    <option value="na">NA</option>
+                                    <option value="kr">KR</option>
+                                </select>
+                            </div>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-globe"></i>
+                            </span>
+                        </div>
+                        <div class="control has-icons-left  is-expanded">
+                            <input id="sum-name-inp" value="Rázôr" class="input is-rounded" type="text" placeholder="Beschwörer">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                        <div class="control">
+                            <a href="javascript:void('')" id="search-btn" class="button is-rounded is-link" type="button" onclick="javascript:getSummon()">
+                                <span class="icon is-small">
+                                    <i class="fas fa-search"></i>
+                                </span>&nbsp;
+                            </a>
+                        </div>
                     </div>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-globe"></i>
-                    </span>
                 </div>
-                <div class="control has-icons-left  is-expanded">
-                  <input id="sum-name-inp" value="Rázôr" class="input is-rounded" type="text" placeholder="Beschwörer">
-                  <span class="icon is-small is-left">
-                      <i class="fas fa-user"></i>
-                  </span>
-                </div>
-                <div class="control">
-                      <a id="search-btn" class="button is-rounded is-link" type="button" onclick="javascript:getSummon()">
-                        <span class="icon is-small">
-                            <i class="fas fa-search"></i>
-                        </span>&nbsp; 
-                      </a>
-                  </div>
-              </div>
-            </div>
+                <!-- Search Result -->
+                <div data-template="test-123" id="testbox">
 
-            <!-- Summoner Data -->
-            <div id="sum-search-result" class="content" style="display: none">
-              <div class="box">
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-128x128 is-marginless">
-                      <img id="sum-pic" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong><span id="sum-name">Summoner Name</span></strong>
-                        <br>
-                        <small>Level <span id="sum-lvl">0</span></small>
-                      </p>
-                      <p>
-                        <span id="sum-queue"></span><br>
-                        <small><strong><span id="sum-wins">0</span> : <span id="sum-loss">0</span></strong>
-                        <br>
-                        <span id="sum-tier">unranked</span>
-                        <i class="fas fa-caret-right"></i>                 
-                        <span id="sum-lp">0</span> LP</small>
-                      </p>
+                </div>
+                <div data-template="matchlist" id="testbox2"></div>
+                <div id="sum-search-result" class="content" style="display: none">
+                    <!-- Summoner Data -->
+                    <div id="summoner-data" class="box">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-128x128 is-marginless">
+                                    <img id="sum-pic" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong><span id="sum-name">Summoner Name</span></strong>
+                                        <br>
+                                        <small>Level <span id="sum-lvl">0</span></small>
+                                    </p>
+                                    <p>
+                                        <span id="sum-queue"></span><br>
+                                        <small>
+                                            <strong><span id="sum-wins">0</span> : <span id="sum-loss">0</span></strong>
+                                            <br>
+                                            <span id="sum-tier">unranked</span>
+                                            <i class="fas fa-caret-right"></i>
+                                            <span id="sum-lp">0</span> LP
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                  </div>
-                </article>
-              </div>
-
-              <div id="sum-matchlist">
-                  <div id="sum-matches-container"></div>
-              </div>
+                    <!-- End Summoner Data -->
+                    <!-- Matchlist -->
+                    <div id="sum-matchlist">
+                        <div id="sum-matches-container"></div>
+                    </div>
+                    <!-- End Matchlist -->
+                </div>
+                <!-- End Search Result -->
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>

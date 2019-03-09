@@ -7,9 +7,6 @@ var version = null;
 
 loadVersion();
 
-
-
-
 function loadVersion() {
 
     getVersion_req = new XMLHttpRequest();
@@ -30,7 +27,7 @@ function loadVersion() {
                 console.log(getVersion_req.responseText);
             }
         }
-    }
+    };
     getVersion_req.send(null);
 }
 
@@ -49,7 +46,7 @@ function loadChampions() {
                 console.log(getChamps_req.responseText);
             }
         }
-    }
+    };
     getChamps_req.send(null);
 }
 
@@ -68,7 +65,7 @@ function loadSumSpells() {
                 console.log(getSumsp_req.responseText);
             }
         }
-    }
+    };
     getSumsp_req.send(null);
 }
 
@@ -91,7 +88,7 @@ function loadRunes() {
                 console.log(getRunes_req.responseText);
             }
         }
-    }
+    };
     getRunes_req.send(null);
 }
 
@@ -403,11 +400,13 @@ function getSummon() {
                     if (match_req.readyState === 4) {
                         try {
                             matches = JSON.parse(match_req.responseText);
+
                             var matches_length = matches.length;
 
                             if (matches_length > 0) {
                                 var max_match_results = 100;
                                 max_match_results = (matches_length < max_match_results) ? matches_length : max_match_results;
+
 
                                 var matches_html = "";
 
@@ -430,6 +429,8 @@ function getSummon() {
                                     let primaryPerk = getRuneReforged(matches[i].perkPrimaryStyle);
                                     let secondaryPerk = getRuneReforged(matches[i].perkSubStyle);
 
+                                    console.log(secondaryPerk.icon);
+
                                     matches_html = matches_html + `
          
 
@@ -437,14 +438,13 @@ function getSummon() {
                                         <div id="mobile-match-infos-`+ i + `" class="columns mobile-match-info is-0 is-centered is-variable is-mobile ` + winbg + `" style="margin-top:0 !important; margin-bottom:0 !important">
                                             <div class="column"><p>`+ queue_types[matches[i].queue] + `</p></div>  
                                             <div class="column"><p><strong>`+ gameresults[matches[i].win] + `</strong></p></div>
-                          
                                             <div class="column"><p>
-                                            <i class="far fa-calendar-alt"></i>
-                                            `+ m_date.toLocaleDateString() + `</p>
-                                            </div>
-                                            <div class="column"><p>
-                                            <i class="far fa-clock"></i>
-                                            `+ duration + ` min</p>
+                                                <i class="far fa-calendar-alt"></i>
+                                                `+ m_date.toLocaleDateString() + `</p>
+                                                </div>
+                                                <div class="column"><p>
+                                                <i class="far fa-clock"></i>
+                                                `+ duration + ` min</p>
                                             </div>
                                             <div class="column is-1"><p><span class="icon is-small is-left show-detail-icon"><i class="fas fa-angle-down"></i></span></p></div>
                                         </div>
@@ -472,15 +472,14 @@ function getSummon() {
                                             </div>
                                             </div>
                                             <div class="column has-vcentered-content has-text-centered c-kda-con">
-                                            <div><strong><span>`+ matches[i].kills + `</span>/<span>` + matches[i].deaths + `</span>/<span>` + matches[i].assists + `</span></strong></div>
-                                            <div>`+ c_kda + ` KDA</div>
-                                            <div>`+ matches[i].killParticipation + `% KP</div> 
+                                                <div><strong><span>`+ matches[i].kills + `</span>/<span>` + matches[i].deaths + `</span>/<span>` + matches[i].assists + `</span></strong></div>
+                                                <div>`+ c_kda + ` KDA</div>
+                                                <div>`+ matches[i].killParticipation + `% KP</div> 
                                             </div>
                                             <div class="column has-vcentered-content has-text-centered">
-                                            <div><span>`+ getChampionData(matches[i].champion).name + `</span> (<span>` + matches[i].level + `</span>)</div>
-                                            <div><span style="color:purple"><i class="fas fa-gem"></i></span> `+ matches[i].minions + ` (` + (matches[i].minions / ((matches[i].gameDuration / 60).toFixed(0))).toFixed(2) + `)</div>
-                                            <div><span style="color:gold"><i class="fas fa-coins"></i></span> `+ (matches[i].gold / 1000).toFixed(1) + `k</div>
-                            
+                                                <div><span>`+ getChampionData(matches[i].champion).name + `</span> (<span>` + matches[i].level + `</span>)</div>
+                                                <div><span style="color:purple"><i class="fas fa-gem"></i></span> `+ matches[i].minions + ` (` + (matches[i].minions / ((matches[i].gameDuration / 60).toFixed(0))).toFixed(2) + `)</div>
+                                                <div><span style="color:gold"><i class="fas fa-coins"></i></span> `+ (matches[i].gold / 1000).toFixed(1) + `k</div>
                                             </div>
                                         </div>
                                         <!-- ITEMS -->

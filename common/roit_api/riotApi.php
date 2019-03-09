@@ -13,7 +13,7 @@ class RiotAPI
     const API_KEY = "RGAPI-61963597-82a1-41ac-9f0a-3e006fdc9deb";
     
     
-    const MAX_MULTI_REQUESTS  = 10;
+    const MAX_MULTI_REQUESTS  = 3;
     const OUTPUT_TYPE_JSON = "JSON";
     const OUTPUT_TYPE_ECHO = "ECHO";
     const OUTPUT_TYPE_ARRAY = "ARRAY";
@@ -185,6 +185,7 @@ class RiotAPI
         foreach($curl_handles as $id => $handle)
         {
             $status_code = curl_getinfo($handle, CURLINFO_RESPONSE_CODE);
+            http_response_code($status_code);
 
             switch ($status_code)
             {
@@ -213,6 +214,8 @@ class RiotAPI
                     }
                     break;
                 default:
+                    $results[$id]["body"] = curl_multi_getcontent($handle);
+                    $results[$id]["status"] = $status_code;
                     continue;                
             }
 
@@ -221,6 +224,7 @@ class RiotAPI
         curl_multi_close($multi_curl_handle);
         
         $this->requestResults = $results;
+        
     }
     
     protected function singleRequest($url)

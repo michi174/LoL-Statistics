@@ -1,23 +1,31 @@
 <?php
+    require_once 'riotApi.php';
 
     header("Access-Control-Allow-Origin: *");
     header("Content-type:application/json");
     
-    require_once("riotapi.php");
-    require_once 'roit_api/riotApi.php';
 
-    const MAX_MATCHES = 3;
+    const MAX_MATCHES = 10;
     
     $api = new RiotApi\RiotAPI();  
 
-    $region = (isset($_GET["region"])) ? $_GET["region"] : "euw1";
+    $region = (isset($_GET["region"])) ? $_GET["region"] : "euw";
     $accountId = (isset($_GET["accountId"])) ? $_GET["accountId"] : "zxXSlCkmTM0w9eZP5chXnt_J13r3jrH6KRyQQgljvroJLCU";
-    $api_url = "http://".$_SERVER['HTTP_HOST']."/steamclient/common/";
-    
-    //$test   = ;
-    //die(var_dump($test));
 
-    $matches = json_decode($api->getJSONFromURL($api_url."roit_api/index.php?api=matchlists&method=by-account&account=".$accountId."&region=".$region), true)["matches"];
+    $api_url = "http://".$_SERVER['HTTP_HOST']."/steamclient/common/";
+
+    if(isset($_GET["m"]))
+    {
+        foreach($_GET["m"] as $id => $gameId)
+        {
+            $matches[$id] = ['gameId' => $gameId];
+        }
+    }
+    else
+    {
+        $matches = json_decode($api->getJSONFromURL($api_url."roit_api/index.php?api=matchlists&method=by-account&account=".$accountId."&region=".$region), true)["matches"];
+    }
+
     
     $player_data = null;
 
@@ -48,13 +56,15 @@
 
     $urls = Array();
 
-    $counter = 0;
+
     foreach($matches as $id => $match_data)
     {
-        $counter += 1;
+        if($id >= MAX_MATCHES)
+        {
+            break;
+        }
 
         $urls[$id] = $api_url."roit_api/index.php?api=matches&matchid=".$match_data["gameId"]."&region=".$region;
-
     }
     
     
@@ -113,6 +123,7 @@
             $item4 = $players_match_data[$searched_playerId]["stats"]["item4"];
             $item5 = $players_match_data[$searched_playerId]["stats"]["item5"];
             $item6 = $players_match_data[$searched_playerId]["stats"]["item6"];
+            $champion = $players_match_data[$searched_playerId]["championId"];
             
 
             $teamkills = 0;
@@ -150,6 +161,7 @@
             $detailed_matches[$matchid]["item6"] = $item6;
             $detailed_matches[$matchid]["raw"] = $match_detailed_data;
             $detailed_matches[$matchid]["partId"] = $partId;
+            $detailed_matches[$matchid]["champion"] = $champion;
             
 
 
