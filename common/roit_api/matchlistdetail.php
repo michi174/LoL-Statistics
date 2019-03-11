@@ -9,8 +9,9 @@
     
     $api = new RiotApi\RiotAPI();  
 
+
     $region = (isset($_GET["region"])) ? $_GET["region"] : "euw";
-    $accountId = (isset($_GET["accountId"])) ? $_GET["accountId"] : "zxXSlCkmTM0w9eZP5chXnt_J13r3jrH6KRyQQgljvroJLCU";
+    $accountId = (isset($_GET["accountId"])) ? $_GET["accountId"] : "";
 
     $api_url = "http://".$_SERVER['HTTP_HOST']."/steamclient/common/";
 
@@ -162,11 +163,7 @@
             $detailed_matches[$matchid]["raw"] = $match_detailed_data;
             $detailed_matches[$matchid]["partId"] = $partId;
             $detailed_matches[$matchid]["champion"] = $champion;
-            
-
-
-
-
+            $detailed_matches[$matchid]["accountId"] = $accountId;
         }
         
         if($matchid === count($matches_new)-1)

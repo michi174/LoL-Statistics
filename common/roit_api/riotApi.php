@@ -13,7 +13,7 @@ class RiotAPI
     const API_KEY = "RGAPI-61963597-82a1-41ac-9f0a-3e006fdc9deb";
     
     
-    const MAX_MULTI_REQUESTS  = 3;
+    const MAX_MULTI_REQUESTS  = 10;
     const OUTPUT_TYPE_JSON = "JSON";
     const OUTPUT_TYPE_ECHO = "ECHO";
     const OUTPUT_TYPE_ARRAY = "ARRAY";
